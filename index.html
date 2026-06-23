@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#d71920" />
+  <title>Friendzone F&B Ops</title>
+  <link rel="icon" href="logo.png" />
+  <link rel="stylesheet" href="styles.css?v=1.0.0" />
+</head>
+<body>
+  <div id="app"></div>
+  <div id="toast" class="toast" aria-live="polite"></div>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="./config.js?v=1.0.0"></script>
+  <script src="./app.js?v=1.0.0"></script>
+  <script>
+    setTimeout(function(){
+      var app = document.getElementById('app');
+      if(app && !app.innerHTML.trim()){
+        app.innerHTML = '<div class="fatal"><h2>App chưa tải được giao diện</h2><p>Vui lòng bấm Ctrl+F5 hoặc kiểm tra file config.js.</p><button class="btn primary" onclick="location.reload()">Tải lại</button></div>';
+      }
+    }, 5000);
+  </script>
+</body>
+</html>
