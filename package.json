@@ -1,6 +1,6 @@
 {
   "name": "friendzone-fnb-ops",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "description": "Friendzone Group F&B + Hotel operations app: attendance, internal finance, HR, page chat AI, KiotViet analytics, hotel ops.",
   "scripts": {

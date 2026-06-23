@@ -2,9 +2,10 @@
 
 insert into public.fnb_units(code,name,type,parent_code,address,manager_code) values
 ('GROUP_ALL','Friendzone Group','GROUP',null,'Phan Thiết / Lâm Đồng','GROUP_ALL_QL'),
-('NHA_ALL','Tất cả nhà hàng','RESTAURANT_GROUP','GROUP_ALL','Tổng hợp nhà hàng','NHA_ALL_QL'),
-('NHA_SAIGONPHO','Sài Gòn Phố - Beer Garden & Karaoke','RESTAURANT','NHA_ALL','N5-33 Mậu Thân, Phú Thuỷ, Lâm Đồng - Ocean Dunes Phan Thiết','NHA_SAIGONPHO_QL'),
-('NHA_FRZ','Friendzone Restaurant','RESTAURANT','NHA_ALL','Friendzone Restaurant','NHA_FRZ_QL'),
+('NHA_GROUP','Tất cả nhà hàng','RESTAURANT_GROUP','GROUP_ALL','Tổng hợp nhà hàng','NHA_GROUP_QL'),
+('NHA_ALL','All Night Food & Beer','RESTAURANT','NHA_GROUP','All Night Food & Beer','NHA_ALL_QL'),
+('NHA_SAIGONPHO','Sài Gòn Phố - Beer Garden & Karaoke','RESTAURANT','NHA_GROUP','N5-33 Mậu Thân, Phú Thuỷ, Lâm Đồng - Ocean Dunes Phan Thiết','NHA_SAIGONPHO_QL'),
+('NHA_FRZ','Friendzone Restaurant','RESTAURANT','NHA_GROUP','Friendzone Restaurant','NHA_FRZ_QL'),
 ('HOTEL_ALL','Tất cả Hotel','HOTEL_GROUP','GROUP_ALL','Tổng hợp lưu trú','HOTEL_ALL_QL'),
 ('HOTEL_VENUS','Venus Resort / Hotel','HOTEL','HOTEL_ALL','Mũi Né / Phan Thiết','HOTEL_VENUS_QL'),
 ('HOTEL_VOLGA','Volga Hotel Apartment','HOTEL','HOTEL_ALL','Phan Thiết','HOTEL_VOLGA_QL'),
@@ -14,7 +15,10 @@ on conflict(code) do update set name=excluded.name,type=excluded.type,parent_cod
 
 insert into public.fnb_staff(code,name,unit_code,role,position,department,base_salary,permissions) values
 ('GROUP_ALL_QL','Admin Friendzone','GROUP_ALL','ADMIN','Chủ / Ban giám đốc','Điều hành',0,array['dashboard','attendance','finance','customers','hr','kiot','hotel','settings']),
-('NHA_ALL_QL','Quản lý tổng nhà hàng','NHA_ALL','MANAGER','Quản lý vùng nhà hàng','Vận hành',15000000,array['dashboard','attendance','finance','customers','hr','kiot']),
+('NHA_GROUP_QL','Quản lý tổng nhà hàng','NHA_GROUP','MANAGER','Quản lý vùng nhà hàng','Vận hành',15000000,array['dashboard','attendance','finance','customers','hr','kiot']),
+('NHA_ALL_QL','QL All Night Food & Beer','NHA_ALL','MANAGER','Quản lý cơ sở','Vận hành',12000000,array['dashboard','attendance','finance','customers','hr','kiot']),
+('NHA_ALL_01','Thu ngân All Night','NHA_ALL','STAFF','Thu ngân','Thu ngân',7500000,array['attendance','finance','customers']),
+('NHA_ALL_02','Phục vụ All Night','NHA_ALL','STAFF','Phục vụ','Phục vụ',6500000,array['attendance','customers']),
 ('NHA_SAIGONPHO_QL','QL Sài Gòn Phố','NHA_SAIGONPHO','MANAGER','Quản lý cơ sở','Vận hành',12000000,array['dashboard','attendance','finance','customers','hr','kiot']),
 ('NHA_SAIGONPHO_01','Thu ngân SGP','NHA_SAIGONPHO','STAFF','Thu ngân','Thu ngân',7500000,array['attendance','finance','customers']),
 ('NHA_SAIGONPHO_02','Phục vụ SGP','NHA_SAIGONPHO','STAFF','Phục vụ','Phục vụ',6500000,array['attendance','customers']),
@@ -30,6 +34,8 @@ insert into public.fnb_staff(code,name,unit_code,role,position,department,base_s
 on conflict(code) do update set name=excluded.name,unit_code=excluded.unit_code,role=excluded.role,position=excluded.position,department=excluded.department,base_salary=excluded.base_salary,permissions=excluded.permissions;
 
 insert into public.fnb_money_accounts(code,unit_code,name,type,opening_balance) values
+('TM_NHA_ALL','NHA_ALL','Tiền mặt All Night Food & Beer','cash',0),
+('CK_NHA_ALL','NHA_ALL','Chuyển khoản All Night Food & Beer','bank',0),
 ('TM_NHA_SAIGONPHO','NHA_SAIGONPHO','Tiền mặt Sài Gòn Phố','cash',0),
 ('CK_NHA_SAIGONPHO','NHA_SAIGONPHO','Chuyển khoản Sài Gòn Phố','bank',0),
 ('TM_NHA_FRZ','NHA_FRZ','Tiền mặt Friendzone Restaurant','cash',0),

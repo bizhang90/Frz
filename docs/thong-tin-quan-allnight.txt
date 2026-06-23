@@ -1,0 +1,4 @@
+All Night Food & Beer.
+Mã cơ sở trong app: NHA_ALL.
+Loại hình: Nhà hàng / Food & Beer.
+Ghi chú: NHA_ALL là cơ sở nhà hàng thật, không dùng làm mã tổng hợp nhà hàng. Mã tổng hợp nhà hàng là NHA_GROUP.

@@ -11,6 +11,7 @@ Sau đó vào SQL Editor chạy lần lượt:
 1. `supabase/001_fnb_core_schema.sql`
 2. `supabase/002_seed_friendzone_units.sql`
 3. `supabase/003_views_reports.sql`
+4. Nếu đã chạy bản v1.0 cũ: `supabase/004_fix_nha_all_allnight.sql`
 
 ## 2. Cấu hình frontend
 
@@ -59,6 +60,8 @@ META_PAGE_ACCESS_TOKEN=
 Quản lý:
 
 ```text
+NHA_GROUP_QL
+NHA_ALL_QL
 NHA_SAIGONPHO_QL
 NHA_FRZ_QL
 HOTEL_VENUS_QL
@@ -70,6 +73,8 @@ HOTEL_FRZ_QL
 Nhân sự:
 
 ```text
+NHA_ALL_01
+NHA_ALL_02
 NHA_SAIGONPHO_01
 NHA_SAIGONPHO_02
 NHA_FRZ_01
@@ -81,6 +86,14 @@ Nếu nhiều quản lý một cơ sở:
 ```text
 NHA_SAIGONPHO_QL01
 NHA_SAIGONPHO_QL02
+```
+
+
+Lưu ý mã cơ sở:
+
+```text
+NHA_GROUP = nhóm tổng hợp tất cả nhà hàng
+NHA_ALL = All Night Food & Beer
 ```
 
 ## 5. KiotViet vận hành đúng
