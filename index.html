@@ -4,16 +4,18 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#12382f">
-  <meta name="description" content="FriendZones Group – hệ sinh thái lưu trú, ẩm thực và giải trí tại Phan Thiết – Mũi Né, với Venus Mũi Né Resort cùng các dự án trong hệ thống.">
+  <meta name="description" content="FriendZones Group kết nối những địa điểm lưu trú, ẩm thực và vui chơi tại Phan Thiết – Mũi Né: Venus Mũi Né Resort, Volga Hotel & Apartment, FriendZones Restaurant và nhiều thương hiệu khác.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="vi_VN">
-  <meta property="og:title" content="FriendZones Group | Lưu trú · Ẩm thực · Trải nghiệm">
-  <meta property="og:description" content="Khám phá hệ thống điểm đến của FriendZones Group tại Phan Thiết – Mũi Né.">
+  <meta property="og:title" content="FriendZones Group | Lưu trú · Ẩm thực · Vui chơi">
+  <meta property="og:description" content="Chọn nơi nghỉ, điểm ăn uống và không gian gặp gỡ phù hợp cho chuyến đi Phan Thiết – Mũi Né.">
   <meta property="og:image" content="/assets/img/home/hero.webp">
-  <link rel="icon" href="assets/img/brands/friendzones-hotel.webp" type="image/webp">
-  <link rel="preload" as="image" href="assets/img/home/hero.webp" fetchpriority="high">
-  <link rel="stylesheet" href="assets/css/styles.css">
-  <title>FriendZones Group | Lưu trú · Ẩm thực · Trải nghiệm</title>
+  <link rel="icon" href="/assets/img/brands/friendzones-hotel.webp" type="image/webp">
+  <link rel="preload" as="image" href="/assets/img/home/hero.webp" fetchpriority="high">
+  <script>document.documentElement.classList.add('js')</script>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <noscript><style>[data-reveal]{opacity:1!important;transform:none!important}</style></noscript>
+  <title>FriendZones Group | Lưu trú · Ẩm thực · Vui chơi</title>
 </head>
 <body>
   <a class="skip-link" href="#main">Đi đến nội dung chính</a>
@@ -24,107 +26,118 @@
         <span class="brand-mark">FZ</span>
         <span class="brand-copy"><strong>FriendZones</strong><small>GROUP</small></span>
       </a>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Mở menu"><span></span><span></span><span></span></button>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Mở menu">
+        <span></span><span></span><span></span>
+      </button>
+
       <nav class="primary-nav" id="primary-nav" aria-label="Điều hướng chính">
-        <a href="#he-sinh-thai">Hệ sinh thái</a>
-        <a href="#venus">Venus Resort</a>
-        <a href="#du-an">Các dự án</a>
-        <a href="#trai-nghiem">Trải nghiệm</a>
+        <a href="#gioi-thieu">Giới thiệu</a>
+        <a href="#diem-den" data-nav-filter="stay">Lưu trú</a>
+        <a href="#diem-den" data-nav-filter="food">Ẩm thực</a>
+        <a href="#diem-den" data-nav-filter="social">Vui chơi & sự kiện</a>
         <a href="#lien-he">Liên hệ</a>
-        <a class="nav-login" href="/login/">Nhân viên</a>
+        <a class="nav-login" href="/login/">Dành cho nhân viên</a>
       </nav>
-      <div class="header-actions"><a class="button button-small button-login" href="/login/">Đăng nhập</a><a class="button button-small header-cta" href="#du-an">Khám phá hệ thống</a></div>
+
+      <a class="employee-login" href="/login/" aria-label="Đăng nhập dành cho nhân viên">Nhân viên</a>
+      <a class="button button-small header-cta" href="#diem-den">Khám phá địa điểm</a>
     </div>
   </header>
 
   <main id="main">
     <section class="hero" aria-labelledby="hero-title">
-      <img class="hero-bg" src="assets/img/home/hero.webp" alt="Không gian nghỉ dưỡng sát biển tại Mũi Né" width="1800" height="1200" fetchpriority="high">
+      <img class="hero-bg" src="/assets/img/home/hero.webp" alt="Không gian nghỉ dưỡng và hồ bơi gần biển tại Mũi Né" width="1800" height="1200" fetchpriority="high">
       <div class="hero-overlay"></div>
+      <div class="hero-orb hero-orb-one" aria-hidden="true"></div>
+      <div class="hero-orb hero-orb-two" aria-hidden="true"></div>
+
       <div class="container hero-inner">
         <div class="hero-copy" data-reveal>
           <p class="eyebrow light">FRIENDZONES GROUP · PHAN THIẾT – MŨI NÉ</p>
-          <h1 id="hero-title">Một hệ sinh thái để <em>ở, ăn, gặp gỡ</em> và tận hưởng.</h1>
-          <p class="hero-lead">Từ kỳ nghỉ bên biển, khách sạn tiện nghi đến nhà hàng, beer garden, cà phê và những không gian gặp gỡ — mỗi dự án là một trải nghiệm khác nhau trong cùng hệ thống FriendZones.</p>
+          <h1 id="hero-title">Nghỉ dưỡng, ăn ngon và tận hưởng <em>theo cách của bạn.</em></h1>
+          <p class="hero-lead">Từ resort gần biển, khách sạn tiện nghi đến nhà hàng, cà phê, beer garden và karaoke — FriendZones giúp bạn dễ dàng chọn đúng nơi cho kỳ nghỉ, buổi hẹn hay một dịp đáng nhớ.</p>
           <div class="hero-actions">
-            <a class="button button-sun" href="#du-an">Xem các dự án</a>
-            <a class="button button-glass" href="du-an/venus-mui-ne-resort/">Khám phá Venus Resort</a>
+            <a class="button button-sun" href="#diem-den">Khám phá các địa điểm</a>
+            <a class="button button-glass" href="/du-an/venus-mui-ne-resort/">Đặt phòng Venus Resort</a>
           </div>
-          <div class="hero-stats" aria-label="Tổng quan hệ thống">
-            <span><b>10</b>Dự án trong hệ thống</span>
-            <span><b>3</b>Nhóm trải nghiệm</span>
-            <span><b>01</b>Điểm đến chung</span>
+          <div class="hero-highlights" aria-label="Các nhóm dịch vụ">
+            <span><i>01</i><b>Resort & khách sạn</b></span>
+            <span><i>02</i><b>Nhà hàng & cà phê</b></span>
+            <span><i>03</i><b>Beer garden & sự kiện</b></span>
           </div>
         </div>
-        <div class="hero-brand-cloud" data-reveal data-delay="120" aria-label="Một số thương hiệu trong hệ thống">
-          <article class="brand-tile main"><img src="assets/img/brands/venus-resort.webp" alt="Venus Mũi Né Resort"></article>
-          <article class="brand-tile"><img src="assets/img/brands/friendzones-restaurant.webp" alt="FriendZones Restaurant"></article>
-          <article class="brand-tile"><img src="assets/img/brands/sai-gon-pho.webp" alt="Sài Gòn Phố"></article>
-          <article class="brand-tile"><img src="assets/img/brands/phan-coffee.webp" alt="Phan Coffee"></article>
+
+        <div class="hero-brand-cloud" data-reveal data-delay="120" aria-label="Một số thương hiệu FriendZones">
+          <article class="brand-tile main"><img src="/assets/img/brands/venus-resort.webp" alt="Venus Mũi Né Resort"></article>
+          <article class="brand-tile"><img src="/assets/img/brands/volga-hotel-apartment.webp" alt="Volga Hotel & Apartment"></article>
+          <article class="brand-tile"><img src="/assets/img/brands/friendzones-restaurant.webp" alt="FriendZones Restaurant"></article>
+          <article class="brand-tile"><img src="/assets/img/brands/sai-gon-pho.webp" alt="Sài Gòn Phố"></article>
         </div>
       </div>
-      <a class="hero-scroll" href="#he-sinh-thai" aria-label="Xem tiếp"><span></span>Khám phá</a>
+      <a class="hero-scroll" href="#gioi-thieu" aria-label="Xem tiếp"><span></span>Khám phá</a>
     </section>
 
-    <section class="system-strip" aria-label="Các nhóm dịch vụ">
-      <div class="container system-strip-inner">
-        <span><i>01</i><b>Lưu trú</b><small>Resort · Hotel · Apartment</small></span>
-        <span><i>02</i><b>Ẩm thực</b><small>Nhà hàng · Food & Beer · Cà phê</small></span>
-        <span><i>03</i><b>Gặp gỡ & giải trí</b><small>Karaoke · Sự kiện · Không gian chill</small></span>
+    <section class="service-strip" aria-label="Dịch vụ FriendZones">
+      <div class="container service-strip-inner">
+        <article><span>Ở</span><div><b>Một nơi nghỉ vừa ý</b><small>Resort, khách sạn và căn hộ cho chuyến đi ngắn hoặc dài ngày.</small></div></article>
+        <article><span>Ăn</span><div><b>Một bữa ăn đáng nhớ</b><small>Nhà hàng, món địa phương, cà phê và những cuộc hẹn bên bàn ăn.</small></div></article>
+        <article><span>Vui</span><div><b>Một buổi gặp thật trọn vẹn</b><small>Beer garden, karaoke, sinh nhật, tiếp khách và sự kiện nhóm.</small></div></article>
       </div>
     </section>
 
-    <section class="section intro" id="he-sinh-thai">
+    <section class="section intro" id="gioi-thieu">
       <div class="container intro-grid">
         <div class="intro-copy" data-reveal>
-          <p class="eyebrow">TỔNG QUAN HỆ THỐNG</p>
-          <h2>Nhiều lựa chọn, một hành trình liền mạch.</h2>
-          <p class="lead">FriendZones Group kết nối các điểm lưu trú, ẩm thực và giải trí tại Phan Thiết – Mũi Né để khách hàng dễ dàng chọn đúng không gian cho từng mục đích: nghỉ dưỡng, công tác, ăn uống, họp mặt hay tổ chức sự kiện.</p>
-          <p>Mỗi thương hiệu giữ cá tính riêng. Trang chủ này là nơi tổng hợp toàn bộ dự án và dẫn khách đến đúng trang giới thiệu, thông tin liên hệ hoặc dịch vụ họ đang cần.</p>
-          <div class="intro-pills"><span>Nghỉ dưỡng bên biển</span><span>Khách sạn & căn hộ</span><span>Ẩm thực địa phương</span><span>Tiệc & sự kiện</span></div>
+          <p class="eyebrow">FRIENDZONES TẠI PHAN THIẾT – MŨI NÉ</p>
+          <h2>Chọn đúng nơi cho từng cuộc hẹn.</h2>
+          <p class="lead">Bạn có thể tìm một kỳ nghỉ gần biển, căn phòng cho chuyến công tác, bữa tối cùng gia đình hay không gian riêng để tổ chức sinh nhật — tất cả đều có trong FriendZones.</p>
+          <p>Mỗi địa điểm mang một phong cách riêng, nhưng cùng hướng đến trải nghiệm thoải mái, thuận tiện và phù hợp với nhu cầu thực tế của khách hàng.</p>
+          <div class="intro-pills"><span>Nghỉ dưỡng bên biển</span><span>Khách sạn & căn hộ</span><span>Ẩm thực địa phương</span><span>Tiệc & gặp gỡ</span></div>
         </div>
         <div class="intro-visual" data-reveal data-delay="100">
-          <img src="assets/img/home/experience.webp" alt="Hoạt động tập thể bên biển" width="1400" height="1000" loading="lazy">
-          <div class="intro-note"><strong>Phan Thiết – Mũi Né</strong><span>Một hệ sinh thái dành cho khách địa phương và du khách.</span></div>
+          <img src="/assets/img/home/experience.webp" alt="Hoạt động tập thể và trải nghiệm tại Phan Thiết" width="1400" height="1000" loading="lazy">
+          <div class="intro-note"><strong>Phan Thiết – Mũi Né</strong><span>Đủ lựa chọn cho kỳ nghỉ, bữa ăn và những cuộc gặp đáng nhớ.</span></div>
         </div>
       </div>
     </section>
 
-    <section class="section venus-feature" id="venus">
+    <section class="section venus-feature" aria-labelledby="venus-title">
       <div class="container venus-grid">
         <div class="venus-media" data-reveal>
-          <img src="assets/img/home/venus-feature.webp" alt="Hồ bơi hướng biển tại Venus Mũi Né Resort" width="1400" height="1000" loading="lazy">
-          <div class="venus-logo"><img src="assets/img/brands/venus-resort.webp" alt="Venus Mũi Né Resort"></div>
+          <img src="/assets/img/home/venus-feature.webp" alt="Hồ bơi hướng biển tại Venus Mũi Né Resort" width="1400" height="1000" loading="lazy">
+          <div class="venus-logo"><img src="/assets/img/brands/venus-resort.webp" alt="Venus Mũi Né Resort"></div>
         </div>
         <div class="venus-copy" data-reveal data-delay="120">
-          <p class="eyebrow light">DỰ ÁN NỔI BẬT</p>
-          <h2>Venus Mũi Né Resort</h2>
-          <p class="lead">Một điểm nghỉ gần biển với hồ bơi hướng biển, phòng nghỉ, bữa sáng, ẩm thực, BBQ và những hoạt động dành cho gia đình, nhóm bạn hoặc khách đoàn.</p>
+          <p class="eyebrow light">GỢI Ý CHO KỲ NGHỈ GẦN BIỂN</p>
+          <h2 id="venus-title">Venus Mũi Né Resort</h2>
+          <p class="lead">Không gian nghỉ ngơi gần biển với hồ bơi hướng biển, phòng view biển và view vườn, bữa sáng, BBQ cùng nhiều lựa chọn dành cho gia đình, nhóm bạn hoặc khách đoàn.</p>
           <ul class="feature-list">
             <li>Phòng view biển và view vườn</li>
             <li>Hồ bơi hướng biển</li>
             <li>Cơm đoàn, BBQ và tiệc ngoài trời</li>
-            <li>Hỗ trợ tour Jeep và trải nghiệm Mũi Né</li>
+            <li>Hỗ trợ tour Jeep khám phá Mũi Né</li>
           </ul>
           <div class="venus-actions">
-            <a class="button button-sun" href="du-an/venus-mui-ne-resort/">Xem trang Venus Resort</a>
+            <a class="button button-sun" href="/du-an/venus-mui-ne-resort/">Khám phá Venus Resort</a>
             <a class="text-link light" href="tel:0819081111">Gọi 0819 08 1111 <span>→</span></a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section projects" id="du-an">
+    <section class="section destinations" id="diem-den">
       <div class="container">
         <div class="section-heading split" data-reveal>
-          <div><p class="eyebrow">HỆ THỐNG DỰ ÁN</p><h2>Chọn điểm đến phù hợp với bạn.</h2></div>
-          <p>Khám phá theo nhu cầu lưu trú, ăn uống hoặc gặp gỡ. Các trang dự án sẽ được cập nhật lần lượt ngay tại hệ thống này.</p>
+          <div><p class="eyebrow">CÁC ĐỊA ĐIỂM CỦA FRIENDZONES</p><h2>Tìm nơi phù hợp với kế hoạch của bạn.</h2></div>
+          <p>Lọc theo nhu cầu lưu trú, ăn uống hoặc vui chơi để nhanh chóng chọn được địa điểm phù hợp tại Phan Thiết – Mũi Né.</p>
         </div>
-        <div class="project-filters" role="tablist" aria-label="Lọc dự án">
+
+        <div class="project-filters" role="tablist" aria-label="Lọc địa điểm">
           <button class="active" type="button" data-filter="all">Tất cả</button>
           <button type="button" data-filter="stay">Lưu trú</button>
-          <button type="button" data-filter="food">Ẩm thực</button>
-          <button type="button" data-filter="social">Gặp gỡ & giải trí</button>
+          <button type="button" data-filter="food">Ẩm thực & cà phê</button>
+          <button type="button" data-filter="social">Vui chơi & sự kiện</button>
         </div>
         <div class="project-grid" id="project-grid" aria-live="polite"></div>
       </div>
@@ -132,51 +145,68 @@
 
     <section class="section experiences" id="trai-nghiem">
       <div class="container">
-        <div class="section-heading center" data-reveal><p class="eyebrow">TRẢI NGHIỆM TRONG HỆ THỐNG</p><h2>Một ngày có thể bắt đầu ở biển và kết thúc bên bàn tiệc.</h2><p>FriendZones Group mang đến nhiều lựa chọn để mỗi cuộc gặp, kỳ nghỉ hoặc buổi tối tại Phan Thiết có một màu sắc riêng.</p></div>
+        <div class="section-heading center" data-reveal>
+          <p class="eyebrow">MỘT NGÀY TẠI PHAN THIẾT</p>
+          <h2>Bắt đầu bên biển, kết thúc bên bàn tiệc.</h2>
+          <p>Dù bạn đi nghỉ, công tác, gặp bạn bè hay tổ chức sự kiện, FriendZones luôn có một lựa chọn phù hợp cho từng thời điểm trong ngày.</p>
+        </div>
         <div class="experience-grid">
-          <article data-reveal><div class="experience-number">01</div><h3>Nghỉ dưỡng & lưu trú</h3><p>Resort sát biển, khách sạn và căn hộ phù hợp cho kỳ nghỉ, công tác, cặp đôi, gia đình hoặc nhóm bạn.</p><a href="#du-an" data-quick-filter="stay">Xem điểm lưu trú →</a></article>
-          <article data-reveal data-delay="80"><div class="experience-number">02</div><h3>Ăn uống & khám phá</h3><p>Từ nhà hàng, món địa phương, food & beer đến cà phê — mỗi thương hiệu phục vụ một nhu cầu khác nhau.</p><a href="#du-an" data-quick-filter="food">Xem địa điểm ăn uống →</a></article>
-          <article data-reveal data-delay="160"><div class="experience-number">03</div><h3>Họp mặt & sự kiện</h3><p>Không gian dành cho sinh nhật, tiếp khách, tiệc nhóm, karaoke, team building và những buổi gặp gỡ đáng nhớ.</p><a href="#du-an" data-quick-filter="social">Xem không gian phù hợp →</a></article>
+          <article data-reveal><div class="experience-number">01</div><h3>Nghỉ dưỡng & lưu trú</h3><p>Resort gần biển, khách sạn và căn hộ dành cho cặp đôi, gia đình, nhóm bạn hoặc khách công tác.</p><a href="#diem-den" data-quick-filter="stay">Xem nơi lưu trú →</a></article>
+          <article data-reveal data-delay="80"><div class="experience-number">02</div><h3>Ăn uống & cà phê</h3><p>Nhà hàng, món địa phương, food & beer và cà phê cho bữa ăn gia đình hoặc một buổi hẹn nhẹ nhàng.</p><a href="#diem-den" data-quick-filter="food">Xem địa điểm ăn uống →</a></article>
+          <article data-reveal data-delay="160"><div class="experience-number">03</div><h3>Họp mặt & sự kiện</h3><p>Không gian cho sinh nhật, karaoke, tiếp khách, tiệc nhóm, team building và những dịp đặc biệt.</p><a href="#diem-den" data-quick-filter="social">Xem nơi vui chơi →</a></article>
         </div>
       </div>
     </section>
 
-    <section class="section brand-wall" aria-label="Thương hiệu trong hệ thống">
+    <section class="section brand-wall" aria-label="Các thương hiệu FriendZones">
       <div class="container">
-        <p class="eyebrow center-text">THƯƠNG HIỆU FRIENDZONES GROUP</p>
-        <div class="brand-wall-grid">
-          <img src="assets/img/brands/all-night-food-beer.webp" alt="All Night Food & Beer" loading="lazy">
-          <img src="assets/img/brands/chammm-phan-thiet.webp" alt="Chấmmm Phan Thiết" loading="lazy">
-          <img src="assets/img/brands/friendzones-hotel.webp" alt="FriendZones Hotel" loading="lazy">
-          <img src="assets/img/brands/friendzones-restaurant.webp" alt="FriendZones Restaurant" loading="lazy">
-          <img src="assets/img/brands/love-hotel-a64.webp" alt="Love Hotel A64" loading="lazy">
-          <img src="assets/img/brands/phan-coffee.webp" alt="Phan Coffee" loading="lazy">
-          <img src="assets/img/brands/sai-gon-pho.webp" alt="Sài Gòn Phố" loading="lazy">
-          <img src="assets/img/brands/thung-view-ho-tom.webp" alt="Thúng View Hồ Tôm" loading="lazy">
-          <img src="assets/img/brands/venus-resort.webp" alt="Venus Mũi Né Resort" loading="lazy">
-          <img src="assets/img/brands/volga-hotel-apartment.svg" alt="Volga Hotel & Apartment" loading="lazy">
+        <div class="section-heading center compact" data-reveal><p class="eyebrow">THƯƠNG HIỆU FRIENDZONES</p><h2>Mỗi nơi một phong cách, cùng chung một điểm đến.</h2></div>
+        <div class="brand-wall-grid" data-reveal>
+          <img src="/assets/img/brands/all-night-food-beer.webp" alt="All Night Food & Beer" loading="lazy">
+          <img src="/assets/img/brands/chammm-phan-thiet.webp" alt="Chấmmm Phan Thiết" loading="lazy">
+          <img src="/assets/img/brands/friendzones-hotel.webp" alt="FriendZones Hotel" loading="lazy">
+          <img src="/assets/img/brands/friendzones-restaurant.webp" alt="FriendZones Restaurant" loading="lazy">
+          <img src="/assets/img/brands/love-hotel-a64.webp" alt="Love Hotel A64" loading="lazy">
+          <img src="/assets/img/brands/phan-coffee.webp" alt="Phan Coffee" loading="lazy">
+          <img src="/assets/img/brands/sai-gon-pho.webp" alt="Sài Gòn Phố" loading="lazy">
+          <img src="/assets/img/brands/thung-view-ho-tom.webp" alt="THÚNG View Hồ Tôm" loading="lazy">
+          <img src="/assets/img/brands/venus-resort.webp" alt="Venus Mũi Né Resort" loading="lazy">
+          <img src="/assets/img/brands/volga-hotel-apartment.webp" alt="Volga Hotel & Apartment" loading="lazy">
         </div>
       </div>
     </section>
 
     <section class="section contact" id="lien-he">
       <div class="container contact-card" data-reveal>
-        <div><p class="eyebrow light">TÌM ĐÚNG ĐIỂM ĐẾN</p><h2>Bạn đang cần phòng nghỉ, bàn ăn hay một không gian cho buổi gặp gỡ?</h2><p>Chọn dự án trong hệ thống để xem thông tin chi tiết. Các trang mới sẽ tiếp tục được cập nhật trên cùng một trang chủ.</p></div>
-        <div class="contact-actions"><a class="button button-sun" href="#du-an">Xem toàn bộ dự án</a><a class="button button-glass" href="du-an/venus-mui-ne-resort/">Venus Mũi Né Resort</a></div>
+        <div>
+          <p class="eyebrow light">CHƯA BIẾT NÊN CHỌN NƠI NÀO?</p>
+          <h2>Hãy bắt đầu từ điều bạn đang cần.</h2>
+          <p>Tìm phòng nghỉ, địa điểm ăn uống hoặc không gian cho buổi gặp gỡ. Chọn nhóm phù hợp để xem nhanh các địa điểm của FriendZones.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="button button-sun" href="#diem-den" data-quick-filter="stay">Tìm nơi lưu trú</a>
+          <a class="button button-glass" href="#diem-den" data-quick-filter="food">Tìm nơi ăn uống</a>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-grid">
-      <div class="footer-brand"><a class="brand inverse" href="#top"><span class="brand-mark">FZ</span><span class="brand-copy"><strong>FriendZones</strong><small>GROUP</small></span></a><p>Hệ sinh thái lưu trú, ẩm thực và trải nghiệm tại Phan Thiết – Mũi Né.</p></div>
-      <div><h3>Khám phá</h3><a href="#he-sinh-thai">Hệ sinh thái</a><a href="#du-an">Các dự án</a><a href="#trai-nghiem">Trải nghiệm</a></div>
-      <div><h3>Dự án nổi bật</h3><a href="du-an/venus-mui-ne-resort/">Venus Mũi Né Resort</a><span>Volga Hotel & Apartment</span><span>FriendZones Restaurant</span></div>
-      <div><h3>Khu vực</h3><span>Phan Thiết</span><span>Mũi Né</span><span>Lâm Đồng, Việt Nam</span></div>
+      <div class="footer-brand">
+        <a class="brand inverse" href="#top"><span class="brand-mark">FZ</span><span class="brand-copy"><strong>FriendZones</strong><small>GROUP</small></span></a>
+        <p>Lưu trú, ẩm thực và vui chơi tại Phan Thiết – Mũi Né.</p>
+      </div>
+      <div><h3>Khám phá</h3><a href="#gioi-thieu">Giới thiệu</a><a href="#diem-den">Tất cả địa điểm</a><a href="#trai-nghiem">Trải nghiệm</a></div>
+      <div><h3>Lưu trú</h3><a href="/du-an/venus-mui-ne-resort/">Venus Mũi Né Resort</a><span>Volga Hotel & Apartment</span><span>FriendZones Hotel</span></div>
+      <div><h3>Khu vực</h3><span>Phan Thiết</span><span>Mũi Né</span><span>Việt Nam</span></div>
     </div>
-    <div class="container footer-bottom"><span>© <span id="year"></span> FriendZones Group</span><span><a href="/login/">Đăng nhập nhân viên</a> · Mỗi dự án, một trải nghiệm riêng.</span></div>
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> FriendZones Group</span>
+      <span><a href="/login/">Dành cho nhân viên</a> · Mỗi nơi một trải nghiệm riêng.</span>
+    </div>
   </footer>
 
-  <script src="assets/js/main.js" defer></script>
+  <script src="/assets/js/main.js" defer></script>
 </body>
 </html>
