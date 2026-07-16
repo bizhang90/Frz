@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900" role="img" aria-labelledby="title desc">
+  <title id="title">Volga Hotel &amp; Apartment</title>
+  <desc id="desc">Logo chữ tạm dùng cho thẻ dự án Volga.</desc>
+  <rect width="900" height="900" rx="90" fill="#0d2741"/>
+  <path d="M110 255h680" stroke="#d6a84e" stroke-width="6" opacity=".85"/>
+  <path d="M110 645h680" stroke="#d6a84e" stroke-width="6" opacity=".85"/>
+  <text x="450" y="455" text-anchor="middle" font-family="Georgia,serif" font-size="178" font-weight="700" fill="#fff">VOLGA</text>
+  <text x="450" y="535" text-anchor="middle" font-family="Arial,sans-serif" font-size="42" letter-spacing="9" fill="#d6a84e">HOTEL &amp; APARTMENT</text>
+</svg>

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101513">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Đăng nhập nhân viên | FriendZones Group</title>
+  <link rel="icon" href="/assets/img/brands/friendzones-hotel.webp" type="image/webp">
+  <link rel="stylesheet" href="/login/styles.css">
+</head>
+<body>
+  <main class="login-shell">
+    <section class="login-visual" aria-label="FriendZones Group">
+      <a class="back-link" href="/">← Về trang chủ</a>
+      <div class="visual-content">
+        <div class="brand-lockup">
+          <span class="brand-mark">FZ</span>
+          <div><strong>FriendZones</strong><small>GROUP · EMPLOYEE PORTAL</small></div>
+        </div>
+        <p class="eyebrow">CỔNG NỘI BỘ NHÂN VIÊN</p>
+        <h1>Một nơi để theo dõi vận hành toàn hệ thống.</h1>
+        <p>Chấm công, doanh thu, quỹ nội bộ, khách hàng, nhân sự, kho và vận hành khách sạn trong cùng một màn hình.</p>
+        <div class="feature-list">
+          <span>✓ Theo từng cơ sở</span>
+          <span>✓ Phân quyền theo nhân sự</span>
+          <span>✓ Dữ liệu F&amp;B và Hotel</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="login-panel">
+      <div class="login-card">
+        <p class="eyebrow dark">ĐĂNG NHẬP</p>
+        <h2>Chào mừng trở lại</h2>
+        <p class="intro">Dùng tài khoản nhân viên đã được cấp để truy cập màn hình vận hành.</p>
+
+        <form id="login-form" novalidate>
+          <label>
+            <span>Email hoặc mã nhân viên</span>
+            <input id="identity" name="identity" type="text" autocomplete="username" placeholder="name@friendzones.vn hoặc GROUP_ALL_QL" required>
+          </label>
+          <label>
+            <span>Mật khẩu</span>
+            <div class="password-wrap">
+              <input id="password" name="password" type="password" autocomplete="current-password" placeholder="Nhập mật khẩu" required>
+              <button id="toggle-password" class="icon-button" type="button" aria-label="Hiện mật khẩu">👁</button>
+            </div>
+          </label>
+          <button class="submit-button" type="submit"><span>Đăng nhập nhân viên</span><b>→</b></button>
+        </form>
+
+        <button id="demo-login" class="demo-button" type="button" hidden>Vào bản demo nội bộ</button>
+        <div id="login-message" class="message" role="status" aria-live="polite"></div>
+
+        <div class="support-note">
+          <strong>Không đăng nhập được?</strong>
+          <span>Liên hệ quản lý hệ thống để được kiểm tra tài khoản hoặc cấp lại mật khẩu.</span>
+        </div>
+      </div>
+      <p class="security-note">Khu vực nội bộ · Không chia sẻ tài khoản cho người khác.</p>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="/nhan-vien/config.js"></script>
+  <script src="/login/login.js"></script>
+</body>
+</html>

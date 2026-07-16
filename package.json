@@ -1,8 +1,8 @@
 {
-  "name": "friendzone-fnb-ops",
-  "version": "1.0.1",
+  "name": "friendzones-group-unified",
+  "version": "1.1.0",
   "private": true,
-  "description": "Friendzone Group F&B + Hotel operations app: attendance, internal finance, HR, page chat AI, KiotViet analytics, hotel ops.",
+  "description": "FriendZones Group public website with employee login portal and F&B/Hotel operations app.",
   "scripts": {
     "start": "vercel dev",
     "lint": "node -c api/[...path].js && node -c api_src/router.js && node -c api_src/notify.js && node -c api_src/fnb-ai.js && node -c api_src/kiotviet.js && node -c api_src/supabase.js"
