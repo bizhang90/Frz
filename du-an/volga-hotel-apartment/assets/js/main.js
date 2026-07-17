@@ -19,6 +19,8 @@ nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
   document.body.classList.remove('menu-open');
 }));
 
+document.documentElement.classList.add('reveal-ready');
+
 const observer = 'IntersectionObserver' in window ? new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (!entry.isIntersecting) return;
@@ -26,10 +28,21 @@ const observer = 'IntersectionObserver' in window ? new IntersectionObserver(ent
     observer.unobserve(entry.target);
   });
 },{threshold:.12,rootMargin:'0px 0px -45px'}) : {observe(el){el.classList.add('is-visible')}};
-document.querySelectorAll('[data-reveal]').forEach(el => {
+const revealElements = [...document.querySelectorAll('[data-reveal]')];
+revealElements.forEach(el => {
   el.style.setProperty('--reveal-delay', `${Number(el.dataset.delay || 0)}ms`);
   observer.observe(el);
 });
+function revealInView(){
+  revealElements.forEach(el => {
+    if(el.classList.contains('is-visible')) return;
+    const rect=el.getBoundingClientRect();
+    if(rect.top < window.innerHeight * .9 && rect.bottom > 0) el.classList.add('is-visible');
+  });
+}
+revealInView();
+window.addEventListener('scroll', revealInView, {passive:true});
+window.addEventListener('resize', revealInView);
 
 const lightbox = document.querySelector('#lightbox');
 const lightboxImage = document.querySelector('#lightbox-image');

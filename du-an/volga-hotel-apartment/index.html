@@ -15,11 +15,8 @@
   <link rel="canonical" href="https://friendzonegroup.net/du-an/volga-hotel-apartment">
   <link rel="icon" href="/assets/img/brands/volga-hotel-apartment.webp" type="image/webp">
   <link rel="preload" as="image" href="/du-an/volga-hotel-apartment/assets/img/hero.webp" fetchpriority="high">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Lora:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
-  <script>document.documentElement.classList.add('js')</script>
   <link rel="stylesheet" href="/du-an/volga-hotel-apartment/assets/css/styles.css">
+  <link rel="stylesheet" href="/assets/css/group-project-nav.css">
   <noscript><style>[data-reveal]{opacity:1!important;transform:none!important}</style></noscript>
   <title>Volga Hotel & Apartment | Phòng nghỉ, căn hộ & hồ bơi tại Mũi Né</title>
   <script type="application/ld+json">
@@ -45,10 +42,22 @@
 <body>
   <a class="skip-link" href="#main">Đi đến nội dung chính</a>
 
-  <div class="group-bar">
-    <div class="container group-bar-inner">
-      <a href="/">← FriendZones</a>
-      <span>Ở, ăn và tận hưởng Phan Thiết – Mũi Né theo cách của bạn.</span>
+  <div class="fz-groupnav">
+    <div class="fz-groupnav-inner">
+      <a class="fz-group-brand" href="/">
+        <img src="/assets/img/brand/friendzones-group.webp" alt="FriendZones" width="120" height="92">
+        <span><b>FriendZones</b><small>PHAN THIẾT · MŨI NÉ</small></span>
+      </a>
+      <a class="fz-groupnav-link fz-intro-link" href="/#gioi-thieu">Giới thiệu</a>
+      <details class="fz-projects-menu">
+        <summary>Các dự án</summary>
+        <div class="fz-projects-dropdown">
+          <a href="/du-an/venus-mui-ne-resort"><img src="/assets/img/brands/venus-resort.webp" alt=""><span><b>Venus Mũi Né Resort</b><small>Resort gần biển · Hồ bơi</small></span></a>
+          <a href="/du-an/volga-hotel-apartment"><img src="/assets/img/brands/volga-hotel-apartment.webp" alt=""><span><b>Volga Hotel & Apartment</b><small>Hotel · Apartment · Hồ bơi</small></span></a>
+        </div>
+      </details>
+      <a class="fz-groupnav-link" href="/#cac-du-an">Tất cả địa điểm</a>
+      <div class="fz-group-contact"><a class="fz-group-zalo" href="https://zalo.me/0877706677" target="_blank" rel="noopener">Zalo chung</a><a class="fz-group-call" href="tel:0877706677"><small>Hotline chung</small><b>0877 706 677</b></a></div>
     </div>
   </div>
 
@@ -81,7 +90,8 @@
           <h1 id="hero-title">Ở thoải mái như một căn hộ. <em>Tận hưởng Mũi Né</em> theo cách của bạn.</h1>
           <p class="hero-lead">Một điểm dừng có hồ bơi, khuôn viên thoáng và nhiều hạng phòng cho cặp đôi, gia đình hoặc nhóm đông — ngay trên đường Nguyễn Đình Chiểu.</p>
           <div class="hero-actions">
-            <a class="button button-primary" href="tel:0888464777">Gọi đặt phòng</a>
+            <a class="button button-primary" href="tel:0888464777">Gọi 088 846 47 77</a>
+            <a class="button button-glass" href="https://zalo.me/0888464777" target="_blank" rel="noopener">Zalo Volga</a>
             <a class="button button-glass" href="#phong-nghi">Xem các hạng phòng</a>
           </div>
           <div class="hero-facts" aria-label="Thông tin nổi bật">
@@ -243,7 +253,7 @@
       <div class="footer-brand"><img src="/du-an/volga-hotel-apartment/assets/img/logo.webp" alt="Volga Hotel & Apartment"><p>Không gian khách sạn và căn hộ mini dành cho cặp đôi, gia đình và nhóm bạn tại Mũi Né.</p></div>
       <div><h3>Khám phá</h3><a href="#gioi-thieu">Giới thiệu</a><a href="#phong-nghi">Phòng nghỉ</a><a href="#tien-ich">Tiện ích</a><a href="#hinh-anh">Hình ảnh</a></div>
       <div><h3>Liên hệ</h3><a href="tel:0888464777">088 846 47 77</a><a href="https://maps.app.goo.gl/DKzC3ixwamiHfJfW7" target="_blank" rel="noopener">Google Maps</a><a href="https://www.facebook.com/Volgahotelaparment/" target="_blank" rel="noopener">Facebook Volga</a></div>
-      <div><h3>FriendZones</h3><a href="/">Trang chủ FriendZones</a><a href="/du-an/venus-mui-ne-resort/">Venus Mũi Né Resort</a><a href="/login/">Dành cho nhân viên</a></div>
+      <div><h3>FriendZones</h3><a href="/">Trang chủ FriendZones</a><a href="/du-an/venus-mui-ne-resort">Venus Mũi Né Resort</a><a href="/login/">Dành cho nhân viên</a></div>
     </div>
     <div class="container footer-bottom"><span>© <span id="year"></span> Volga Hotel & Apartment</span><span>Mũi Né · Lâm Đồng · Việt Nam</span></div>
   </footer>
@@ -255,7 +265,7 @@
     <button class="lightbox-nav lightbox-next" type="button" aria-label="Ảnh tiếp theo">→</button>
   </div>
 
-  <div class="mobile-booking"><a href="tel:0888464777"><span>Gọi đặt phòng</span><strong>088 846 47 77</strong></a><a href="https://maps.app.goo.gl/DKzC3ixwamiHfJfW7" target="_blank" rel="noopener">Chỉ đường</a></div>
+  <div class="mobile-booking"><a href="tel:0888464777"><span>Gọi đặt phòng</span><strong>088 846 47 77</strong></a><a href="https://zalo.me/0888464777" target="_blank" rel="noopener">Zalo Volga</a></div>
   <script src="/du-an/volga-hotel-apartment/assets/js/main.js" defer></script>
 </body>
 </html>

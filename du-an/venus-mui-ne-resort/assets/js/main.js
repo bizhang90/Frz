@@ -11,8 +11,10 @@
   const onScroll=()=>{const y=scrollY;header?.classList.toggle('scrolled',y>15);back?.classList.toggle('visible',y>650);let id='';sections.forEach(s=>{if(y>=s.offsetTop-160)id=s.id});links.forEach(a=>a.classList.toggle('active',a.getAttribute('href')===`#${id}`))};
   addEventListener('scroll',onScroll,{passive:true});onScroll();back?.addEventListener('click',()=>scrollTo({top:0,behavior:'smooth'}));
 
+  document.documentElement.classList.add('reveal-ready');
   const reveals=document.querySelectorAll('[data-reveal]');reveals.forEach(el=>el.style.setProperty('--delay',`${Number(el.dataset.delay||0)}ms`));
   if('IntersectionObserver'in window){const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('revealed');obs.unobserve(e.target)}}),{threshold:.1,rootMargin:'0px 0px -30px'});reveals.forEach(el=>obs.observe(el))}else reveals.forEach(el=>el.classList.add('revealed'));
+  const revealInView=()=>reveals.forEach(el=>{if(el.classList.contains('revealed'))return;const r=el.getBoundingClientRect();if(r.top<innerHeight*.9&&r.bottom>0)el.classList.add('revealed')});revealInView();addEventListener('scroll',revealInView,{passive:true});addEventListener('resize',revealInView);
 
   document.querySelectorAll('.accordion details').forEach(item=>item.addEventListener('toggle',()=>{if(item.open)document.querySelectorAll('.accordion details').forEach(other=>{if(other!==item)other.open=false})}));
 
