@@ -1,4 +1,4 @@
-# FriendZones — Website + Employee Portal v1.4.0
+# FriendZones — Website + Employee Portal v1.5.0
 
 Dự án hợp nhất website FriendZones, các trang địa điểm lưu trú và App vận hành F&B/Hotel trong cùng một project Vercel.
 
@@ -38,12 +38,15 @@ Dự án hợp nhất website FriendZones, các trang địa điểm lưu trú v
 6. Cấu hình đăng nhập theo `AUTH-SETUP.md`.
 7. Redeploy Production và kiểm tra các đường dẫn `/`, `/du-an/venus-mui-ne-resort/`, `/du-an/volga-hotel-apartment/`, `/login/` và `/nhan-vien/`.
 
-## Trang Volga v1
+## Website công khai v1.5
 
-- Sử dụng ảnh thực tế trong file ảnh Volga do chủ dự án cung cấp.
-- Có 6 nhóm phòng cho 2–15 khách.
-- Có lightbox hình ảnh, trang tiện ích, vị trí, Facebook, Google Maps và CTA gọi đặt phòng.
-- Ảnh đã chuyển sang WebP và tối ưu kích thước.
+- Trang chủ giới thiệu chung toàn bộ FriendZones.
+- Menu con **Các dự án** chứa Venus Mũi Né Resort và Volga Hotel & Apartment.
+- Hotline/Zalo chung: `0877 706 677`.
+- Venus sử dụng hotline riêng `0819 08 1111`.
+- Volga sử dụng hotline riêng `088 846 47 77`.
+- Ảnh hero độ phân giải cao, logo thương hiệu, gradient và hiệu ứng chuyển động đã được bổ sung.
+- Không phụ thuộc Google Fonts; sử dụng font hệ thống hỗ trợ tiếng Việt.
 
 ## API giữ nguyên
 
@@ -55,4 +58,4 @@ Dự án hợp nhất website FriendZones, các trang địa điểm lưu trú v
 
 ## Phiên bản
 
-`v1.4.0-volga-project-page`
+`v1.5.0-volga-project-page`

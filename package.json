@@ -1,8 +1,8 @@
 {
   "name": "friendzones-group-unified",
-  "version": "1.2.0",
+  "version": "1.5.0",
   "private": true,
-  "description": "FriendZones Group public website with customer-facing destinations, Venus Resort page, employee login portal and F&B/Hotel operations app.",
+  "description": "FriendZones public website, Venus and Volga project pages, employee login portal and F&B/Hotel operations app.",
   "scripts": {
     "start": "vercel dev",
     "lint": "node -c api/[...path].js && node -c api_src/router.js && node -c api_src/notify.js && node -c api_src/fnb-ai.js && node -c api_src/kiotviet.js && node -c api_src/supabase.js"
