@@ -1,28 +1,29 @@
-# FriendZones Group — Website + Employee Portal v1.2.0
+# FriendZones — Website + Employee Portal v1.4.0
 
-Dự án hợp nhất website FriendZones Group, trang Venus Mũi Né Resort và App vận hành F&B/Hotel trong cùng một project Vercel.
+Dự án hợp nhất website FriendZones, các trang địa điểm lưu trú và App vận hành F&B/Hotel trong cùng một project Vercel.
 
 ## Luồng sử dụng
 
 - Khách hàng truy cập `/` để xem các địa điểm lưu trú, ẩm thực và vui chơi.
-- Nhân viên chọn **Nhân viên** để vào `/login/`.
-- Sau khi đăng nhập, hệ thống mở `/nhan-vien/`.
-- Venus Resort nằm tại `/du-an/venus-mui-ne-resort/`.
+- Nhân viên chọn **Nhân viên** để vào `/login/` rồi mở `/nhan-vien/` sau khi đăng nhập.
+- Venus Mũi Né Resort: `/du-an/venus-mui-ne-resort/`.
+- Volga Hotel & Apartment: `/du-an/volga-hotel-apartment/`.
 - API vận hành tiếp tục hoạt động dưới `/api/*`.
 
 ## Cấu trúc chính
 
 ```text
 /
-├── index.html                      Website chính
-├── assets/                         Ảnh, CSS, JS website
-├── du-an/venus-mui-ne-resort/      Trang Venus Resort + đầy đủ assets
-├── login/                          Màn hình đăng nhập nhân viên
-├── nhan-vien/                      App F&B + Hotel hiện tại
-├── api/                            Vercel Functions
-├── api_src/                        Backend source
-├── supabase/                       SQL schema/seed
-├── docs/                           Thông tin cơ sở
+├── index.html                         Website chính
+├── assets/                            Ảnh, CSS, JS website
+├── du-an/venus-mui-ne-resort/         Trang Venus Resort
+├── du-an/volga-hotel-apartment/       Trang Volga Hotel & Apartment
+├── login/                             Màn hình đăng nhập nhân viên
+├── nhan-vien/                         App F&B + Hotel hiện tại
+├── api/                               Vercel Functions
+├── api_src/                           Backend source
+├── supabase/                          SQL schema/seed
+├── sitemap.xml
 ├── package.json
 └── vercel.json
 ```
@@ -33,13 +34,16 @@ Dự án hợp nhất website FriendZones Group, trang Venus Mũi Né Resort và
 2. Vercel Framework Preset: **Other**.
 3. Root Directory: `./`.
 4. Build Command và Output Directory: để trống.
-5. Thêm các Environment Variables backend theo `SETUP-FNB.md`.
+5. Thêm Environment Variables backend theo `SETUP-FNB.md`.
 6. Cấu hình đăng nhập theo `AUTH-SETUP.md`.
-7. Redeploy Production, sau đó kiểm tra cả `/` và `/du-an/venus-mui-ne-resort`.
+7. Redeploy Production và kiểm tra các đường dẫn `/`, `/du-an/venus-mui-ne-resort/`, `/du-an/volga-hotel-apartment/`, `/login/` và `/nhan-vien/`.
 
-## Lưu ý quan trọng về trang Venus
+## Trang Volga v1
 
-Toàn bộ đường dẫn CSS, JavaScript và hình ảnh của Venus đã chuyển sang đường dẫn tuyệt đối. Vì vậy trang vẫn hiển thị đúng khi Vercel tự bỏ dấu `/` cuối URL.
+- Sử dụng ảnh thực tế trong file ảnh Volga do chủ dự án cung cấp.
+- Có 6 nhóm phòng cho 2–15 khách.
+- Có lightbox hình ảnh, trang tiện ích, vị trí, Facebook, Google Maps và CTA gọi đặt phòng.
+- Ảnh đã chuyển sang WebP và tối ưu kích thước.
 
 ## API giữ nguyên
 
@@ -51,4 +55,4 @@ Toàn bộ đường dẫn CSS, JavaScript và hình ảnh của Venus đã chuy
 
 ## Phiên bản
 
-`v1.2.0-customer-facing-home-venus-assets-volga-animation`
+`v1.4.0-volga-project-page`

@@ -1,2 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /login/
+Disallow: /nhan-vien/
+Sitemap: https://friendzonegroup.net/sitemap.xml

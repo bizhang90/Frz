@@ -8,8 +8,8 @@ const projects = [
   {
     id: 'volga', category: 'stay', theme: 'stay', categoryLabel: 'Hotel & Apartment',
     name: 'Volga Hotel & Apartment',
-    description: 'Không gian lưu trú kết hợp khách sạn và căn hộ, phù hợp cho chuyến đi ngắn ngày, công tác hoặc kỳ nghỉ dài hơn.',
-    image: '/assets/img/brands/volga-hotel-apartment.webp', location: 'Mũi Né', href: ''
+    description: 'Khách sạn và căn hộ mini có hồ bơi, nhiều hạng phòng cho cặp đôi, gia đình và nhóm từ 2 đến 15 khách.',
+    image: '/assets/img/brands/volga-hotel-apartment.webp', location: '219 Nguyễn Đình Chiểu, Mũi Né', href: '/du-an/volga-hotel-apartment/'
   },
   {
     id: 'friendzones-hotel', category: 'stay', theme: 'stay', categoryLabel: 'Khách sạn',
