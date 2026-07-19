@@ -1,3 +1,7 @@
+# FriendZones Unified v2.0.0
+
+Trang chủ công khai FriendZones V2 + trang dự án Venus/Volga + ứng dụng nhân viên hiện có.
+
 # FriendZones — Website + Employee Portal v1.5.0
 
 Dự án hợp nhất website FriendZones, các trang địa điểm lưu trú và App vận hành F&B/Hotel trong cùng một project Vercel.
