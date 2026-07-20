@@ -1,4 +1,4 @@
-# FriendZones — Website + Employee Portal v2.2.0
+# FriendZones — Website + Employee Portal v2.2.1
 
 Dự án hợp nhất website FriendZones, các trang địa điểm lưu trú và App vận hành F&B/Hotel trong cùng một project Vercel.
 
@@ -59,4 +59,4 @@ Dự án hợp nhất website FriendZones, các trang địa điểm lưu trú v
 
 ## Phiên bản
 
-`v2.2.0-venus-redesign`
+`v2.2.1-project-menu-restored`
