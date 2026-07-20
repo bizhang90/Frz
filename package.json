@@ -1,6 +1,6 @@
 {
   "name": "friendzones-group-unified",
-  "version": "1.5.0",
+  "version": "2.2.0",
   "private": true,
   "description": "FriendZones public website, Venus and Volga project pages, employee login portal and F&B/Hotel operations app.",
   "scripts": {
