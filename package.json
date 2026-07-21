@@ -1,8 +1,8 @@
 {
   "name": "friendzones-group-unified",
-  "version": "2.3.2",
+  "version": "2.4.0",
   "private": true,
-  "description": "FriendZones public website with customer-facing content polished across the homepage and accommodation pages, while preserving the v2.2.2 visual design and internal operations app.",
+  "description": "FriendZones public website with four optimized restaurant project pages backed by Cloudflare R2 media, while preserving existing accommodation designs and the internal operations app.",
   "scripts": {
     "start": "vercel dev",
     "lint": "node -c api/[...path].js && node -c api_src/router.js && node -c api_src/notify.js && node -c api_src/fnb-ai.js && node -c api_src/kiotviet.js && node -c api_src/supabase.js"
