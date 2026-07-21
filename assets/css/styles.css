@@ -17,8 +17,8 @@
   --shadow-soft:0 18px 50px rgba(3,39,54,.10);
   --radius:28px;
   --container:min(1220px,calc(100% - 48px));
-  --display:Georgia,"Times New Roman",serif;
-  --body:"Segoe UI Variable","Aptos","Segoe UI",Arial,sans-serif;
+  --display:"Lora",Georgia,"Times New Roman",serif;
+  --body:"Be Vietnam Pro","Segoe UI",Arial,sans-serif;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:110px}

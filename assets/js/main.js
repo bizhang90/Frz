@@ -90,5 +90,18 @@ revealInView();
 window.addEventListener('scroll', revealInView, { passive: true });
 window.addEventListener('resize', revealInView);
 
+// Safety net: if a browser/timing quirk ever prevents the opacity transition
+// from completing, force full visibility so content is never stuck hidden.
+setTimeout(() => {
+  revealElements.forEach(element => {
+    if (getComputedStyle(element).opacity === '0') {
+      element.classList.add('is-visible');
+      element.style.transition = 'none';
+      element.style.opacity = '1';
+      element.style.transform = 'none';
+    }
+  });
+}, 1800);
+
 const year = document.querySelector('#year');
 if (year) year.textContent = new Date().getFullYear();
