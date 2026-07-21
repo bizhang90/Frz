@@ -1,0 +1,304 @@
+{
+  "slug": "friendzones-restaurant",
+  "name": "Nhà hàng FriendZones",
+  "hero": {
+    "desktop": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/hero/desktop.webp",
+    "mobile": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/hero/mobile.webp"
+  },
+  "gallery": [
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/gallery/image-01.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/thumbs/image-01.webp",
+      "alt": "Món ăn được phục vụ tại Nhà hàng FriendZones",
+      "category": "food"
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/gallery/image-02.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/thumbs/image-02.webp",
+      "alt": "Món gà sốt dùng cùng nhóm bạn",
+      "category": "food"
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/gallery/image-03.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/thumbs/image-03.webp",
+      "alt": "Món chính trình bày tại bàn tiệc",
+      "category": "food"
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/gallery/image-04.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/thumbs/image-04.webp",
+      "alt": "Bàn tiệc nhiều món cho nhóm",
+      "category": "food"
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/gallery/image-05.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/thumbs/image-05.webp",
+      "alt": "Món ăn được trình bày chỉn chu",
+      "category": "food"
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/gallery/image-06.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/thumbs/image-06.webp",
+      "alt": "Món gà sốt đặc trưng",
+      "category": "food"
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/gallery/image-07.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/thumbs/image-07.webp",
+      "alt": "Món chiên dùng trong tiệc nhóm",
+      "category": "food"
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/gallery/image-08.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/thumbs/image-08.webp",
+      "alt": "Bàn tiệc hải sản và món Việt",
+      "category": "food"
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/gallery/image-09.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/thumbs/image-09.webp",
+      "alt": "Phòng Vàng 1 với bàn tiệc riêng",
+      "category": "room"
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/gallery/image-10.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/thumbs/image-10.webp",
+      "alt": "Phòng Vàng 2 cho nhóm nhỏ",
+      "category": "room"
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/gallery/image-11.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/thumbs/image-11.webp",
+      "alt": "Phòng VIP 10 với bàn tròn",
+      "category": "room"
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/gallery/image-12.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/thumbs/image-12.webp",
+      "alt": "Phòng VIP 2",
+      "category": "room"
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/gallery/image-13.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/thumbs/image-13.webp",
+      "alt": "Phòng VIP 3",
+      "category": "room"
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/gallery/image-14.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/thumbs/image-14.webp",
+      "alt": "Phòng VIP 5 với bàn tròn",
+      "category": "room"
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/gallery/image-15.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/thumbs/image-15.webp",
+      "alt": "Phòng VIP 6",
+      "category": "room"
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/gallery/image-16.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/thumbs/image-16.webp",
+      "alt": "Phòng VIP 7",
+      "category": "room"
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/gallery/image-17.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/thumbs/image-17.webp",
+      "alt": "Phòng VIP 8",
+      "category": "room"
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/gallery/image-18.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/thumbs/image-18.webp",
+      "alt": "Phòng VIP 9 bố trí bàn dài",
+      "category": "room"
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/gallery/image-19.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/thumbs/image-19.webp",
+      "alt": "Phòng VIP 9 phục vụ nhóm đông",
+      "category": "room"
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/gallery/image-20.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/thumbs/image-20.webp",
+      "alt": "Tiệc sinh nhật trong phòng riêng",
+      "category": "party"
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/gallery/image-21.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/thumbs/image-21.webp",
+      "alt": "Buổi gặp gỡ gia đình và bạn bè",
+      "category": "party"
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/gallery/image-22.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/thumbs/image-22.webp",
+      "alt": "Karaoke và tiệc nhóm trong phòng riêng",
+      "category": "party"
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/gallery/image-23.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/thumbs/image-23.webp",
+      "alt": "Trang trí sinh nhật theo yêu cầu",
+      "category": "party"
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/gallery/image-24.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/thumbs/image-24.webp",
+      "alt": "Không gian sinh nhật riêng tư",
+      "category": "party"
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/gallery/image-25.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/thumbs/image-25.webp",
+      "alt": "Tiệc sinh nhật tại Nhà hàng FriendZones",
+      "category": "party"
+    }
+  ],
+  "menu": [
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/menu/page-01.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/menu/thumbs/page-01.webp",
+      "alt": "Thực đơn Nhà hàng FriendZones - trang 1",
+      "page": 1
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/menu/page-02.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/menu/thumbs/page-02.webp",
+      "alt": "Thực đơn Nhà hàng FriendZones - trang 2",
+      "page": 2
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/menu/page-03.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/menu/thumbs/page-03.webp",
+      "alt": "Thực đơn Nhà hàng FriendZones - trang 3",
+      "page": 3
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/menu/page-04.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/menu/thumbs/page-04.webp",
+      "alt": "Thực đơn Nhà hàng FriendZones - trang 4",
+      "page": 4
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/menu/page-05.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/menu/thumbs/page-05.webp",
+      "alt": "Thực đơn Nhà hàng FriendZones - trang 5",
+      "page": 5
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/menu/page-06.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/menu/thumbs/page-06.webp",
+      "alt": "Thực đơn Nhà hàng FriendZones - trang 6",
+      "page": 6
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/menu/page-07.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/menu/thumbs/page-07.webp",
+      "alt": "Thực đơn Nhà hàng FriendZones - trang 7",
+      "page": 7
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/menu/page-08.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/menu/thumbs/page-08.webp",
+      "alt": "Thực đơn Nhà hàng FriendZones - trang 8",
+      "page": 8
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/menu/page-09.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/menu/thumbs/page-09.webp",
+      "alt": "Thực đơn Nhà hàng FriendZones - trang 9",
+      "page": 9
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/menu/page-10.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/menu/thumbs/page-10.webp",
+      "alt": "Thực đơn Nhà hàng FriendZones - trang 10",
+      "page": 10
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/menu/page-11.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/menu/thumbs/page-11.webp",
+      "alt": "Thực đơn Nhà hàng FriendZones - trang 11",
+      "page": 11
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/menu/page-12.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/menu/thumbs/page-12.webp",
+      "alt": "Thực đơn Nhà hàng FriendZones - trang 12",
+      "page": 12
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/menu/page-13.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/menu/thumbs/page-13.webp",
+      "alt": "Thực đơn Nhà hàng FriendZones - trang 13",
+      "page": 13
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/menu/page-14.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/menu/thumbs/page-14.webp",
+      "alt": "Thực đơn Nhà hàng FriendZones - trang 14",
+      "page": 14
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/menu/page-15.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/menu/thumbs/page-15.webp",
+      "alt": "Thực đơn Nhà hàng FriendZones - trang 15",
+      "page": 15
+    }
+  ],
+  "videos": [
+    {
+      "label": "Phòng Vàng 00",
+      "src": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/videos/vang-00.mp4",
+      "poster": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/video-posters/vang-00.webp"
+    },
+    {
+      "label": "Phòng Vàng 00",
+      "src": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/videos/vang-00.mp4",
+      "poster": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/video-posters/vang-00.webp"
+    },
+    {
+      "label": "Phòng VIP 00",
+      "src": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/videos/vip-00.mp4",
+      "poster": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/video-posters/vip-00.webp"
+    },
+    {
+      "label": "Phòng VIP 00",
+      "src": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/videos/vip-00.mp4",
+      "poster": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/video-posters/vip-00.webp"
+    },
+    {
+      "label": "Phòng VIP 00",
+      "src": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/videos/vip-00.mp4",
+      "poster": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/video-posters/vip-00.webp"
+    },
+    {
+      "label": "Phòng VIP 00",
+      "src": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/videos/vip-00.mp4",
+      "poster": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/video-posters/vip-00.webp"
+    },
+    {
+      "label": "Phòng VIP 00",
+      "src": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/videos/vip-00.mp4",
+      "poster": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/video-posters/vip-00.webp"
+    },
+    {
+      "label": "Phòng VIP 00",
+      "src": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/videos/vip-00.mp4",
+      "poster": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/video-posters/vip-00.webp"
+    },
+    {
+      "label": "Phòng VIP 00",
+      "src": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/videos/vip-00.mp4",
+      "poster": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/video-posters/vip-00.webp"
+    },
+    {
+      "label": "Phòng VIP 00",
+      "src": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/videos/vip-00.mp4",
+      "poster": "https://media.friendzonegroup.net/restaurants/v1/friendzones-restaurant/video-posters/vip-00.webp"
+    }
+  ]
+}
