@@ -12,7 +12,13 @@ function setFilter(filter){filterButtons.forEach(button=>{const active=button.da
 filterButtons.forEach(button=>button.addEventListener('click',()=>setFilter(button.dataset.roomFilter)));
 document.querySelectorAll('[data-jump-filter]').forEach(link=>link.addEventListener('click',()=>setFilter(link.dataset.jumpFilter)));
 const lightbox=document.querySelector('#lightbox');const lightboxImage=lightbox?.querySelector('img');
-document.querySelectorAll('[data-lightbox]').forEach(button=>button.addEventListener('click',()=>{if(!lightbox||!lightboxImage)return;const source=button.dataset.lightbox;lightboxImage.src=`/du-an/khach-san-phan-thiet/assets/img/${source}`;lightboxImage.alt=button.querySelector('img')?.alt||'Ảnh khách sạn';lightbox.showModal()}));
+const hotelMediaUrl=source=>{
+  if(/^https?:\/\//i.test(source))return source;
+  return /^(friendzones-|hero-friendzones|room-fz-)/.test(source)
+    ? `https://media.friendzonegroup.net/lodging/v1/friendzones-hotel/img/${source}`
+    : `https://media.friendzonegroup.net/lodging/v1/love-hotel/img/${source}`;
+};
+document.querySelectorAll('[data-lightbox]').forEach(button=>button.addEventListener('click',()=>{if(!lightbox||!lightboxImage)return;const source=button.dataset.lightbox;lightboxImage.src=hotelMediaUrl(source);lightboxImage.alt=button.querySelector('img')?.alt||'Ảnh khách sạn';lightbox.showModal()}));
 lightbox?.querySelector('.lightbox-close')?.addEventListener('click',()=>lightbox.close());
 lightbox?.addEventListener('click',event=>{if(event.target===lightbox)lightbox.close()});
 const revealElements=[...document.querySelectorAll('[data-reveal]')];

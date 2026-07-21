@@ -1,4 +1,4 @@
-const base = '/du-an/volga-hotel-apartment/assets/img/';
+const base = 'https://media.friendzonegroup.net/lodging/v1/volga/img/';
 const header = document.querySelector('.site-header');
 const menuButton = document.querySelector('.menu-toggle');
 const nav = document.querySelector('.primary-nav');

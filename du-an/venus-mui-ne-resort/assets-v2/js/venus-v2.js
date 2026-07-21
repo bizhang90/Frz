@@ -1,7 +1,7 @@
 (() => {
   'use strict';
 
-  const base = '/du-an/venus-mui-ne-resort/assets-v2/';
+  const base = 'https://media.friendzonegroup.net/lodging/v1/venus/';
   const phone = '0819081111';
   const zaloUrl = `https://zalo.me/${phone}`;
 
