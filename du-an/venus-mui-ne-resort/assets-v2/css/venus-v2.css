@@ -15,8 +15,8 @@
   --line:rgba(8,47,60,.14);
   --shadow:0 28px 80px rgba(4,31,42,.16);
   --shadow-soft:0 18px 50px rgba(4,31,42,.10);
-  --body:"Segoe UI Variable","Segoe UI",Arial,sans-serif;
-  --display:Georgia,"Times New Roman",serif;
+  --body:"Be Vietnam Pro","Segoe UI",Arial,sans-serif;
+  --display:"Lora",Georgia,"Times New Roman",serif;
   --radius:28px;
 }
 *{box-sizing:border-box}

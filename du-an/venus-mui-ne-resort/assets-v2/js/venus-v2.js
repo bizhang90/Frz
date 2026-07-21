@@ -132,6 +132,19 @@
     revealObserver.observe(element);
   });
 
+  // Safety net: if a browser/timing quirk ever prevents the opacity transition
+  // from completing, force full visibility so content is never stuck hidden.
+  setTimeout(() => {
+    document.querySelectorAll('[data-reveal]').forEach(element => {
+      if (getComputedStyle(element).opacity === '0') {
+        element.classList.add('visible');
+        element.style.transition = 'none';
+        element.style.opacity = '1';
+        element.style.transform = 'none';
+      }
+    });
+  }, 1800);
+
   const header = document.querySelector('.site-header');
   const menuButton = document.querySelector('.menu-toggle');
   const navigation = document.querySelector('.primary-nav');
