@@ -44,6 +44,19 @@ revealInView();
 window.addEventListener('scroll', revealInView, {passive:true});
 window.addEventListener('resize', revealInView);
 
+// Safety net: if a browser/timing quirk ever prevents the opacity transition
+// from completing, force full visibility so content is never stuck hidden.
+setTimeout(() => {
+  revealElements.forEach(el => {
+    if (getComputedStyle(el).opacity === '0') {
+      el.classList.add('is-visible');
+      el.style.transition = 'none';
+      el.style.opacity = '1';
+      el.style.transform = 'none';
+    }
+  });
+}, 1800);
+
 const lightbox = document.querySelector('#lightbox');
 const lightboxImage = document.querySelector('#lightbox-image');
 const lightboxCaption = document.querySelector('#lightbox-caption');
