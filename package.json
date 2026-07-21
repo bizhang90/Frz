@@ -1,8 +1,8 @@
 {
   "name": "friendzones-group-unified",
-  "version": "2.3.1",
+  "version": "2.3.2",
   "private": true,
-  "description": "FriendZones public website with Venus, Volga and Khách Sạn Tại Phan Thiết prominently integrated on the homepage, plus project pages, employee login portal and F&B/Hotel operations app.",
+  "description": "FriendZones public website with customer-facing content polished across the homepage and accommodation pages, while preserving the v2.2.2 visual design and internal operations app.",
   "scripts": {
     "start": "vercel dev",
     "lint": "node -c api/[...path].js && node -c api_src/router.js && node -c api_src/notify.js && node -c api_src/fnb-ai.js && node -c api_src/kiotviet.js && node -c api_src/supabase.js"
