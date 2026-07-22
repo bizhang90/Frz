@@ -1,0 +1,300 @@
+{
+  "slug": "chammm",
+  "name": "Chấmmm",
+  "hero": {
+    "desktop": "https://media.friendzonegroup.net/restaurants/v1/chammm/hero/desktop.webp",
+    "mobile": "https://media.friendzonegroup.net/restaurants/v1/chammm/hero/mobile.webp"
+  },
+  "gallery": [
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/chammm/gallery/image-01.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/chammm/thumbs/image-01.webp",
+      "alt": "Lẩu thả Phan Thiết tại Chấmmm",
+      "category": "food"
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/chammm/gallery/image-02.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/chammm/thumbs/image-02.webp",
+      "alt": "Không gian phòng VIP sang trọng tại Chấmmm",
+      "category": "vip"
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/chammm/gallery/image-03.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/chammm/thumbs/image-03.webp",
+      "alt": "Buổi tiệc nhóm tại sân vườn Chấmmm",
+      "category": "party"
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/chammm/gallery/image-04.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/chammm/thumbs/image-04.webp",
+      "alt": "Bàn tiệc món Việt tại Chấmmm",
+      "category": "food"
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/chammm/gallery/image-05.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/chammm/thumbs/image-05.webp",
+      "alt": "Không gian sân vườn phong cách Địa Trung Hải",
+      "category": "space"
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/chammm/gallery/image-06.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/chammm/thumbs/image-06.webp",
+      "alt": "Món ăn được phục vụ tại Chấmmm",
+      "category": "food"
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/chammm/gallery/image-07.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/chammm/thumbs/image-07.webp",
+      "alt": "Không khí tiệc và gặp gỡ tại Chấmmm",
+      "category": "party"
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/chammm/gallery/image-08.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/chammm/thumbs/image-08.webp",
+      "alt": "Bàn ăn và đồ uống tại Chấmmm",
+      "category": "food"
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/chammm/gallery/image-09.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/chammm/thumbs/image-09.webp",
+      "alt": "Không gian sự kiện đông khách tại Chấmmm",
+      "category": "party"
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/chammm/gallery/image-10.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/chammm/thumbs/image-10.webp",
+      "alt": "Dông bằm xúc bánh đa tại Chấmmm",
+      "category": "food"
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/chammm/gallery/image-11.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/chammm/thumbs/image-11.webp",
+      "alt": "Quầy bar trong không gian Chấmmm",
+      "category": "space"
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/chammm/gallery/image-12.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/chammm/thumbs/image-12.webp",
+      "alt": "Sân vườn Địa Trung Hải về đêm tại Chấmmm",
+      "category": "space"
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/chammm/gallery/image-13.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/chammm/thumbs/image-13.webp",
+      "alt": "Cá cơm rim dùng cùng cơm tại Chấmmm",
+      "category": "food"
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/chammm/gallery/image-14.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/chammm/thumbs/image-14.webp",
+      "alt": "Bữa tối dành cho cặp đôi tại Chấmmm",
+      "category": "party"
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/chammm/gallery/image-15.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/chammm/thumbs/image-15.webp",
+      "alt": "Bữa ăn gia đình tại Chấmmm",
+      "category": "party"
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/chammm/gallery/image-16.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/chammm/thumbs/image-16.webp",
+      "alt": "Mặt tiền Nhà hàng Chấmmm tại Tôn Đức Thắng",
+      "category": "space"
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/chammm/gallery/image-17.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/chammm/thumbs/image-17.webp",
+      "alt": "Bàn tiệc dài trong sân vườn Chấmmm",
+      "category": "space"
+    }
+  ],
+  "menu": [
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/chammm/menu/page-01.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/chammm/menu/thumbs/page-01.webp",
+      "alt": "Thực đơn Chấmmm - trang 1",
+      "page": 1
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/chammm/menu/page-02.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/chammm/menu/thumbs/page-02.webp",
+      "alt": "Thực đơn Chấmmm - trang 2",
+      "page": 2
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/chammm/menu/page-03.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/chammm/menu/thumbs/page-03.webp",
+      "alt": "Thực đơn Chấmmm - trang 3",
+      "page": 3
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/chammm/menu/page-04.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/chammm/menu/thumbs/page-04.webp",
+      "alt": "Thực đơn Chấmmm - trang 4",
+      "page": 4
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/chammm/menu/page-05.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/chammm/menu/thumbs/page-05.webp",
+      "alt": "Thực đơn Chấmmm - trang 5",
+      "page": 5
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/chammm/menu/page-06.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/chammm/menu/thumbs/page-06.webp",
+      "alt": "Thực đơn Chấmmm - trang 6",
+      "page": 6
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/chammm/menu/page-07.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/chammm/menu/thumbs/page-07.webp",
+      "alt": "Thực đơn Chấmmm - trang 7",
+      "page": 7
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/chammm/menu/page-08.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/chammm/menu/thumbs/page-08.webp",
+      "alt": "Thực đơn Chấmmm - trang 8",
+      "page": 8
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/chammm/menu/page-09.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/chammm/menu/thumbs/page-09.webp",
+      "alt": "Thực đơn Chấmmm - trang 9",
+      "page": 9
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/chammm/menu/page-10.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/chammm/menu/thumbs/page-10.webp",
+      "alt": "Thực đơn Chấmmm - trang 10",
+      "page": 10
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/chammm/menu/page-11.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/chammm/menu/thumbs/page-11.webp",
+      "alt": "Thực đơn Chấmmm - trang 11",
+      "page": 11
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/chammm/menu/page-12.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/chammm/menu/thumbs/page-12.webp",
+      "alt": "Thực đơn Chấmmm - trang 12",
+      "page": 12
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/chammm/menu/page-13.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/chammm/menu/thumbs/page-13.webp",
+      "alt": "Thực đơn Chấmmm - trang 13",
+      "page": 13
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/chammm/menu/page-14.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/chammm/menu/thumbs/page-14.webp",
+      "alt": "Thực đơn Chấmmm - trang 14",
+      "page": 14
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/chammm/menu/page-15.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/chammm/menu/thumbs/page-15.webp",
+      "alt": "Thực đơn Chấmmm - trang 15",
+      "page": 15
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/chammm/menu/page-16.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/chammm/menu/thumbs/page-16.webp",
+      "alt": "Thực đơn Chấmmm - trang 16",
+      "page": 16
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/chammm/menu/page-17.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/chammm/menu/thumbs/page-17.webp",
+      "alt": "Thực đơn Chấmmm - trang 17",
+      "page": 17
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/chammm/menu/page-18.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/chammm/menu/thumbs/page-18.webp",
+      "alt": "Thực đơn Chấmmm - trang 18",
+      "page": 18
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/chammm/menu/page-19.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/chammm/menu/thumbs/page-19.webp",
+      "alt": "Thực đơn Chấmmm - trang 19",
+      "page": 19
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/chammm/menu/page-20.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/chammm/menu/thumbs/page-20.webp",
+      "alt": "Thực đơn Chấmmm - trang 20",
+      "page": 20
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/chammm/menu/page-21.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/chammm/menu/thumbs/page-21.webp",
+      "alt": "Thực đơn Chấmmm - trang 21",
+      "page": 21
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/chammm/menu/page-22.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/chammm/menu/thumbs/page-22.webp",
+      "alt": "Thực đơn Chấmmm - trang 22",
+      "page": 22
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/chammm/menu/page-23.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/chammm/menu/thumbs/page-23.webp",
+      "alt": "Thực đơn Chấmmm - trang 23",
+      "page": 23
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/chammm/menu/page-24.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/chammm/menu/thumbs/page-24.webp",
+      "alt": "Thực đơn Chấmmm - trang 24",
+      "page": 24
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/chammm/menu/page-25.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/chammm/menu/thumbs/page-25.webp",
+      "alt": "Thực đơn Chấmmm - trang 25",
+      "page": 25
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/chammm/menu/page-26.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/chammm/menu/thumbs/page-26.webp",
+      "alt": "Thực đơn Chấmmm - trang 26",
+      "page": 26
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/chammm/menu/page-27.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/chammm/menu/thumbs/page-27.webp",
+      "alt": "Thực đơn Chấmmm - trang 27",
+      "page": 27
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/chammm/menu/page-28.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/chammm/menu/thumbs/page-28.webp",
+      "alt": "Thực đơn Chấmmm - trang 28",
+      "page": 28
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/chammm/menu/page-29.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/chammm/menu/thumbs/page-29.webp",
+      "alt": "Thực đơn Chấmmm - trang 29",
+      "page": 29
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/chammm/menu/page-30.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/chammm/menu/thumbs/page-30.webp",
+      "alt": "Thực đơn Chấmmm - trang 30",
+      "page": 30
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/chammm/menu/page-31.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/chammm/menu/thumbs/page-31.webp",
+      "alt": "Thực đơn Chấmmm - trang 31",
+      "page": 31
+    }
+  ]
+}
