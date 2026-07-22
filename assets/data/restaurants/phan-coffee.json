@@ -1,0 +1,83 @@
+{
+  "slug": "phan-coffee",
+  "name": "Phan Coffee",
+  "hero": {
+    "desktop": "https://media.friendzonegroup.net/restaurants/v1/phan-coffee/hero/desktop.webp",
+    "mobile": "https://media.friendzonegroup.net/restaurants/v1/phan-coffee/hero/mobile.webp"
+  },
+  "gallery": [
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/phan-coffee/gallery/image-01.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/phan-coffee/thumbs/image-01.webp",
+      "alt": "Mặt tiền Phan Coffee tại góc đường Lê Duẩn",
+      "category": "exterior"
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/phan-coffee/gallery/image-02.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/phan-coffee/thumbs/image-02.webp",
+      "alt": "Không gian kính rộng và chỗ ngồi bên trong Phan Coffee",
+      "category": "space"
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/phan-coffee/gallery/image-03.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/phan-coffee/thumbs/image-03.webp",
+      "alt": "Khu vực bàn ghế hiện đại tại Phan Coffee",
+      "category": "space"
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/phan-coffee/gallery/image-04.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/phan-coffee/thumbs/image-04.webp",
+      "alt": "Dãy bàn cạnh cửa kính tại Phan Coffee",
+      "category": "space"
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/phan-coffee/gallery/image-05.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/phan-coffee/thumbs/image-05.webp",
+      "alt": "Góc ngồi xanh mát và yên tĩnh tại Phan Coffee",
+      "category": "space"
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/phan-coffee/gallery/image-06.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/phan-coffee/thumbs/image-06.webp",
+      "alt": "Góc trang trí tranh nghệ thuật tại Phan Coffee",
+      "category": "detail"
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/phan-coffee/gallery/image-07.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/phan-coffee/thumbs/image-07.webp",
+      "alt": "Mặt tiền Phan Coffee trên đường Lê Duẩn",
+      "category": "exterior"
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/phan-coffee/gallery/image-08.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/phan-coffee/thumbs/image-08.webp",
+      "alt": "Không gian đón ánh sáng tự nhiên tại Phan Coffee",
+      "category": "space"
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/phan-coffee/gallery/image-09.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/phan-coffee/thumbs/image-09.webp",
+      "alt": "Góc đọc sách và làm việc tại Phan Coffee",
+      "category": "work"
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/phan-coffee/gallery/image-10.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/phan-coffee/thumbs/image-10.webp",
+      "alt": "Bàn ngồi nhìn ra đường tại Phan Coffee",
+      "category": "space"
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/phan-coffee/gallery/image-11.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/phan-coffee/thumbs/image-11.webp",
+      "alt": "Toàn cảnh mặt tiền Phan Coffee",
+      "category": "exterior"
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/phan-coffee/gallery/image-12.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/phan-coffee/thumbs/image-12.webp",
+      "alt": "Bàn dành cho gặp gỡ và làm việc tại Phan Coffee",
+      "category": "work"
+    }
+  ],
+  "menu": []
+}

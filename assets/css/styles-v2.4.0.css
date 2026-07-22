@@ -147,3 +147,9 @@ h2{font-size:clamp(2.65rem,5vw,5.1rem);line-height:1.02}
 /* v2.4.2 — Chấmmm project */
 .dining-card-chammm{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr)}.dining-card-chammm .dining-image{aspect-ratio:auto;min-height:370px}.dining-card-chammm .dining-body{align-items:center;padding:34px}
 @media(max-width:700px){.dining-card-chammm{display:block}.dining-card-chammm .dining-image{min-height:0;aspect-ratio:16/9}.dining-card-chammm .dining-body{padding:18px}}
+
+/* v2.4.3: six dining cards use a balanced two-column grid */
+.dining-card-chammm,.dining-card-phan-coffee{grid-column:auto;display:block}
+.dining-card-chammm .dining-image,.dining-card-phan-coffee .dining-image{aspect-ratio:16/9;min-height:0}
+.dining-card-chammm .dining-body,.dining-card-phan-coffee .dining-body{padding:24px}
+@media(max-width:700px){.dining-card-chammm .dining-body,.dining-card-phan-coffee .dining-body{padding:18px}}
