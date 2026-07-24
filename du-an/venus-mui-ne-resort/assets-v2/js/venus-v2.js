@@ -288,13 +288,13 @@
     document.body.classList.remove('modal-open');
   };
 
-  document.querySelector('[data-menu-open]').addEventListener('click', event => {
+  document.querySelectorAll('[data-menu-open]').forEach(trigger => trigger.addEventListener('click', event => {
     lastFocusedElement = event.currentTarget;
     menuModal.classList.add('open');
     menuModal.setAttribute('aria-hidden', 'false');
     document.body.classList.add('modal-open');
     document.querySelector('.menu-modal-close').focus({ preventScroll: true });
-  });
+  }));
   document.querySelector('.menu-modal-close').addEventListener('click', closeMenu);
   document.querySelectorAll('[data-menu-image]').forEach(image => image.addEventListener('click', () => {
     closeMenu();

@@ -430,3 +430,20 @@ h2{margin-bottom:24px;font-size:clamp(44px,5vw,72px)}
   *{transition-duration:.01ms!important}
   .hero-video{display:none}
 }
+
+
+/* v2.4.4 — menu Venus hiển thị nổi bật */
+.venus-menu-teaser{margin-top:58px;padding:28px;border-radius:30px;background:linear-gradient(135deg,#06384a,#0a596e);color:#fff;display:grid;grid-template-columns:300px 1fr;gap:28px;align-items:center;box-shadow:var(--shadow)}
+.venus-menu-teaser-copy>span{font-size:9px;letter-spacing:.18em;color:var(--sun);font-weight:850}
+.venus-menu-teaser-copy h3{font-family:var(--display);font-size:2rem;line-height:1.12;margin:9px 0 12px;font-weight:500}
+.venus-menu-teaser-copy p{color:rgba(255,255,255,.68);font-size:.82rem}
+.venus-menu-teaser-copy .button{border:0;cursor:pointer}
+.venus-menu-rail{display:grid;grid-template-columns:repeat(4,minmax(150px,1fr));gap:12px;overflow:auto;scroll-snap-type:x mandatory;padding-bottom:3px}
+.venus-menu-rail button{min-width:150px;border:0;padding:0;border-radius:16px;overflow:hidden;background:#fff;cursor:pointer;scroll-snap-align:start;box-shadow:0 10px 28px rgba(0,0,0,.18)}
+.venus-menu-rail img{width:100%;aspect-ratio:3/4;object-fit:cover;transition:transform .35s ease}
+.venus-menu-rail button:hover img{transform:scale(1.035)}
+.venus-menu-float{position:fixed;z-index:1450;right:22px;bottom:22px;display:flex;flex-direction:column;align-items:flex-start;padding:12px 18px;border:0;border-radius:18px;background:var(--sun);color:var(--ink);box-shadow:0 18px 45px rgba(5,40,52,.28);cursor:pointer;line-height:1.1}
+.venus-menu-float span{font-size:8px;letter-spacing:.14em;font-weight:850;opacity:.65}
+.venus-menu-float strong{font-size:13px;margin-top:4px}
+@media(max-width:960px){.venus-menu-teaser{grid-template-columns:1fr}.venus-menu-rail{grid-template-columns:repeat(4,190px)}}
+@media(max-width:760px){.venus-menu-teaser{margin-top:36px;padding:20px}.venus-menu-rail{grid-template-columns:repeat(4,145px)}.venus-menu-float{display:none}.mobile-booking{grid-template-columns:1fr auto auto}.mobile-booking button{border:0;display:grid;place-items:center;padding:0 17px;border-radius:13px;background:var(--sun);color:var(--ink);font-size:11px;font-weight:850;cursor:pointer}.mobile-booking a:last-child{padding:0 17px}}
