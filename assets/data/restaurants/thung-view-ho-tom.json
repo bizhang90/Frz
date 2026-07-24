@@ -149,6 +149,48 @@
       "thumb": "https://media.friendzonegroup.net/restaurants/v1/thung-view-ho-tom/thumbs/image-24.webp",
       "alt": "Tiệc sinh nhật cạnh hồ",
       "category": "party"
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/thung-view-ho-tom/vip/room-01.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/thung-view-ho-tom/vip/thumbs/room-01.webp",
+      "alt": "Phòng VIP riêng tư dành cho nhóm từ 8 đến 20 khách tại THÚNG",
+      "category": "vip"
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/thung-view-ho-tom/vip/room-02.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/thung-view-ho-tom/vip/thumbs/room-02.webp",
+      "alt": "Phòng VIP ấm cúng phù hợp tiếp khách và họp nhóm",
+      "category": "vip"
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/thung-view-ho-tom/vip/room-03.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/thung-view-ho-tom/vip/thumbs/room-03.webp",
+      "alt": "Phòng VIP bàn dài dành cho tiệc công ty và gia đình đông người",
+      "category": "vip"
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/thung-view-ho-tom/vip/room-04.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/thung-view-ho-tom/vip/thumbs/room-04.webp",
+      "alt": "Lối đi riêng dẫn đến khu phòng VIP tại THÚNG",
+      "category": "vip"
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/thung-view-ho-tom/vip/room-05.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/thung-view-ho-tom/vip/thumbs/room-05.webp",
+      "alt": "Phòng VIP trang trí theo yêu cầu cho dịp đặc biệt",
+      "category": "vip"
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/thung-view-ho-tom/vip/room-06.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/thung-view-ho-tom/vip/thumbs/room-06.webp",
+      "alt": "Phòng VIP dành cho gia đình, cặp đôi và nhóm bạn",
+      "category": "vip"
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/thung-view-ho-tom/vip/room-07.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/thung-view-ho-tom/vip/thumbs/room-07.webp",
+      "alt": "Không gian phòng VIP bàn dài riêng tư tại THÚNG",
+      "category": "vip"
     }
   ],
   "menu": [
@@ -361,6 +403,92 @@
       "thumb": "https://media.friendzonegroup.net/restaurants/v1/thung-view-ho-tom/menu/thumbs/page-35.webp",
       "alt": "Thực đơn THÚNG View Hồ Tôm - trang 35",
       "page": 35
+    }
+  ],
+  "groupMenu": [
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/thung-view-ho-tom/group-menu/page-01.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/thung-view-ho-tom/group-menu/thumbs/page-01.webp",
+      "alt": "Thực đơn cơm niêu và set cơm đoàn THÚNG - trang 1",
+      "page": 1
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/thung-view-ho-tom/group-menu/page-02.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/thung-view-ho-tom/group-menu/thumbs/page-02.webp",
+      "alt": "Thực đơn cơm niêu và set cơm đoàn THÚNG - trang 2",
+      "page": 2
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/thung-view-ho-tom/group-menu/page-03.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/thung-view-ho-tom/group-menu/thumbs/page-03.webp",
+      "alt": "Thực đơn cơm niêu và set cơm đoàn THÚNG - trang 3",
+      "page": 3
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/thung-view-ho-tom/group-menu/page-04.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/thung-view-ho-tom/group-menu/thumbs/page-04.webp",
+      "alt": "Thực đơn cơm niêu và set cơm đoàn THÚNG - trang 4",
+      "page": 4
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/thung-view-ho-tom/group-menu/page-05.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/thung-view-ho-tom/group-menu/thumbs/page-05.webp",
+      "alt": "Thực đơn cơm niêu và set cơm đoàn THÚNG - trang 5",
+      "page": 5
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/thung-view-ho-tom/group-menu/page-06.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/thung-view-ho-tom/group-menu/thumbs/page-06.webp",
+      "alt": "Thực đơn cơm niêu và set cơm đoàn THÚNG - trang 6",
+      "page": 6
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/thung-view-ho-tom/group-menu/page-07.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/thung-view-ho-tom/group-menu/thumbs/page-07.webp",
+      "alt": "Thực đơn cơm niêu và set cơm đoàn THÚNG - trang 7",
+      "page": 7
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/thung-view-ho-tom/group-menu/page-08.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/thung-view-ho-tom/group-menu/thumbs/page-08.webp",
+      "alt": "Thực đơn cơm niêu và set cơm đoàn THÚNG - trang 8",
+      "page": 8
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/thung-view-ho-tom/group-menu/page-09.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/thung-view-ho-tom/group-menu/thumbs/page-09.webp",
+      "alt": "Thực đơn cơm niêu và set cơm đoàn THÚNG - trang 9",
+      "page": 9
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/thung-view-ho-tom/group-menu/page-10.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/thung-view-ho-tom/group-menu/thumbs/page-10.webp",
+      "alt": "Thực đơn cơm niêu và set cơm đoàn THÚNG - trang 10",
+      "page": 10
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/thung-view-ho-tom/group-menu/page-11.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/thung-view-ho-tom/group-menu/thumbs/page-11.webp",
+      "alt": "Thực đơn cơm niêu và set cơm đoàn THÚNG - trang 11",
+      "page": 11
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/thung-view-ho-tom/group-menu/page-12.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/thung-view-ho-tom/group-menu/thumbs/page-12.webp",
+      "alt": "Thực đơn cơm niêu và set cơm đoàn THÚNG - trang 12",
+      "page": 12
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/thung-view-ho-tom/group-menu/page-13.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/thung-view-ho-tom/group-menu/thumbs/page-13.webp",
+      "alt": "Thực đơn cơm niêu và set cơm đoàn THÚNG - trang 13",
+      "page": 13
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/thung-view-ho-tom/group-menu/page-14.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/thung-view-ho-tom/group-menu/thumbs/page-14.webp",
+      "alt": "Thực đơn cơm niêu và set cơm đoàn THÚNG - trang 14",
+      "page": 14
     }
   ]
 }

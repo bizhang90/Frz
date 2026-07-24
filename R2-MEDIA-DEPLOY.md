@@ -1,14 +1,16 @@
-# Media R2 cho FriendZones v2.4.2
+# Media R2 cho FriendZones v2.4.4
 
-Website dùng media từ `https://media.friendzonegroup.net` cho:
+Website dùng media từ `https://media.friendzonegroup.net` cho các dự án lưu trú và ẩm thực.
 
-- 5 nhà hàng tại `restaurants/v1/`, gồm cả Chấmmm tại `restaurants/v1/chammm/`.
-- Venus, Volga, Friendzones Hotel và Love Hotel tại `lodging/v1/`.
+## Bổ sung trong v2.4.4
+
+- `restaurants/v1/thung-view-ho-tom/vip/`: 7 ảnh phòng VIP và thumbnail.
+- `restaurants/v1/thung-view-ho-tom/group-menu/`: 14 ảnh cơm niêu/khách đoàn và thumbnail.
 
 ## Thứ tự triển khai
 
-1. Upload bộ media R2 v3 trước.
-2. Kiểm tra `https://media.friendzonegroup.net/restaurants/v1/chammm/hero/desktop.webp` và các URL mẫu trong `R2-UPLOAD-GUIDE.md`.
-3. Deploy website v2.4.2.
+1. Upload gói `friendzones-r2-media-v5-thung-vip-com-doan-delta`.
+2. Kiểm tra hai URL mẫu trong `R2-UPLOAD-GUIDE.md`.
+3. Deploy website v2.4.4.
 
-Không đưa `.env.r2` hoặc ZIP media lên GitHub.
+Không đưa `.env.r2`, Access Key, Secret Key hoặc ZIP media lên GitHub.
