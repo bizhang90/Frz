@@ -1,8 +1,8 @@
 {
   "name": "friendzones-group-unified",
-  "version": "2.4.4",
+  "version": "2.4.5",
   "private": true,
-  "description": "FriendZones public website with restaurant, coffee and lodging media delivered from Cloudflare R2; includes Phan Coffee, updated project contact details and Zalo CTAs while preserving approved lodging designs and the internal operations app.",
+  "description": "FriendZones public website using Cloudflare R2 media; fixes THÚNG menu navigation by combining à-la-carte and group menus in one browser and prevents stale JS/CSS after deploy.",
   "scripts": {
     "start": "vercel dev",
     "lint": "node -c api/[...path].js && node -c api_src/router.js && node -c api_src/notify.js && node -c api_src/fnb-ai.js && node -c api_src/kiotviet.js && node -c api_src/supabase.js"

@@ -1,4 +1,4 @@
-# Media R2 cho FriendZones v2.4.4
+# Media R2 cho FriendZones v2.4.5
 
 Website dùng media từ `https://media.friendzonegroup.net` cho các dự án lưu trú và ẩm thực.
 
@@ -11,6 +11,6 @@ Website dùng media từ `https://media.friendzonegroup.net` cho các dự án l
 
 1. Upload gói `friendzones-r2-media-v5-thung-vip-com-doan-delta`.
 2. Kiểm tra hai URL mẫu trong `R2-UPLOAD-GUIDE.md`.
-3. Deploy website v2.4.4.
+3. Deploy website v2.4.5. Không cần upload lại media cho bản sửa menu này.
 
 Không đưa `.env.r2`, Access Key, Secret Key hoặc ZIP media lên GitHub.
