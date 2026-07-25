@@ -1,6 +1,6 @@
 {
   "name": "friendzones-group-unified",
-  "version": "2.4.5",
+  "version": "2.4.6",
   "private": true,
   "description": "FriendZones public website using Cloudflare R2 media; fixes THÚNG menu navigation by combining à-la-carte and group menus in one browser and prevents stale JS/CSS after deploy.",
   "scripts": {

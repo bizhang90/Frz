@@ -9,7 +9,10 @@
   if(menuToggle&&localNav){menuToggle.addEventListener('click',()=>{const open=localNav.classList.toggle('open');menuToggle.setAttribute('aria-expanded',String(open));});qsa('a',localNav).forEach(a=>a.addEventListener('click',()=>{localNav.classList.remove('open');menuToggle.setAttribute('aria-expanded','false');}));}
   const year=qs('#year'); if(year) year.textContent=new Date().getFullYear();
 
-  const reveal=()=>{const els=qsa('[data-reveal]');if(!('IntersectionObserver'in window)){els.forEach(el=>el.classList.add('is-visible'));return;}const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('is-visible');io.unobserve(e.target);}}),{threshold:.12,rootMargin:'0px 0px -35px'});els.forEach(el=>io.observe(el));};
+  const reveal=()=>{const els=qsa('[data-reveal]');if(!('IntersectionObserver'in window)){els.forEach(el=>el.classList.add('is-visible'));return;}const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('is-visible');io.unobserve(e.target);}}),{threshold:.12,rootMargin:'0px 0px -35px'});els.forEach(el=>io.observe(el));
+    // Safety net: guarantee content is never stuck hidden if a transition/timing quirk prevents the reveal from firing.
+    setTimeout(()=>els.forEach(el=>{if(getComputedStyle(el).opacity==='0'){el.classList.add('is-visible');el.style.transition='none';el.style.opacity='1';el.style.transform='none';}}),1800);
+  };
   reveal();
 
   const dialog=qs('[data-media-dialog]'), dialogContent=qs('[data-dialog-content]'), prev=qs('[data-dialog-prev]'), next=qs('[data-dialog-next]');
