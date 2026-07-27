@@ -1,3 +1,28 @@
+# FriendZones Unified v2.5.0
+
+Bản production cho website công khai và cổng nhân viên F&B/Hotel. Nâng cấp chính: quản lý nhân sự, phân quyền Supabase và chấm công GPS theo giờ làm thực tế, không tự động checkout.
+
+## Triển khai HR & chấm công
+
+Đọc và thực hiện đúng thứ tự trong [`SETUP-HR-ATTENDANCE-PRODUCTION.md`](SETUP-HR-ATTENDANCE-PRODUCTION.md).
+
+Migration và kiểm tra mới:
+
+```text
+supabase/005_hr_attendance_production.sql
+supabase/006_bootstrap_first_admin_template.sql
+supabase/007_post_deploy_verification.sql
+```
+
+Tài liệu vận hành:
+
+```text
+HUONG-DAN-VAN-HANH-NHAN-SU-CHAM-CONG.md
+GO-LIVE-CHECKLIST-v2.5.0.md
+```
+
+---
+
 # FriendZones — Website + Employee Portal v2.2.1
 
 Dự án hợp nhất website FriendZones, các trang địa điểm lưu trú và App vận hành F&B/Hotel trong cùng một project Vercel.

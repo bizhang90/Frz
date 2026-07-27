@@ -1,51 +1,9 @@
-# Cấu hình đăng nhập nhân viên
+# Xác thực nhân viên v2.5.0
 
-## Cấu trúc
+Bản này đã chuyển sang mô hình production: Supabase Auth + hồ sơ `fnb_staff.auth_user_id` + RLS theo vai trò, quyền và cơ sở.
 
-- `/` — website công khai FriendZones Group.
-- `/login/` — màn hình đăng nhập nhân viên.
-- `/nhan-vien/` — App vận hành F&B + Hotel.
-- `/api/*` — API backend hiện có.
+Không còn dùng đăng nhập demo khi `APP_ENV=production`.
 
-## Chạy thử giao diện
+Thực hiện toàn bộ hướng dẫn tại [`SETUP-HR-ATTENDANCE-PRODUCTION.md`](SETUP-HR-ATTENDANCE-PRODUCTION.md), đặc biệt các bước migration 005, bootstrap ADMIN đầu tiên và cấu hình Service Role Key trên Vercel.
 
-Mặc định `nhan-vien/config.js` đang để:
-
-```js
-APP_ENV: 'demo'
-```
-
-Ở chế độ này, trang đăng nhập hiển thị nút **Vào bản demo nội bộ**. Chế độ demo chỉ dùng kiểm thử giao diện và không phải lớp bảo mật production.
-
-## Bật Supabase Auth
-
-1. Mở Supabase → Authentication → Providers → bật Email.
-2. Tạo tài khoản nhân viên trong Authentication → Users.
-3. Cập nhật `nhan-vien/config.js`:
-
-```js
-window.FNB_CONFIG = {
-  APP_NAME: 'FriendZones Group · Màn hình nhân viên',
-  APP_ENV: 'production',
-  SUPABASE_URL: 'https://YOUR_PROJECT.supabase.co',
-  SUPABASE_ANON_KEY: 'YOUR_ANON_KEY',
-  DEFAULT_UNIT: 'GROUP_ALL',
-  GROUP_NAME: 'Friendzone Group',
-  PRIVACY_HIDE_PHONE_IN_GROUP: true,
-  API_BASE: '/api'
-};
-```
-
-4. Deploy lại Vercel.
-5. Truy cập `/login/` và đăng nhập bằng email/mật khẩu nhân viên.
-
-## Cảnh báo bảo mật cần xử lý trước khi dùng thật
-
-Schema hiện tại trong `supabase/001_fnb_core_schema.sql` còn policy mở cho `anon/authenticated` vì đây là bản nội bộ demo. Màn hình đăng nhập phía trước không thay thế bảo mật database.
-
-Trước khi đưa dữ liệu tài chính, nhân sự và khách hàng thật lên production, cần:
-
-- Liên kết `auth.users.id` với hồ sơ nhân viên.
-- Siết RLS theo cơ sở, vai trò và quyền của nhân viên.
-- Chặn anon đọc/ghi các bảng `fnb_*`.
-- Kiểm tra quyền API server-side thay vì chỉ dựa vào giao diện.
+Tuyệt đối không đưa `SUPABASE_SERVICE_ROLE_KEY` vào `nhan-vien/config.js` hoặc GitHub.

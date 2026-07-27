@@ -1,3 +1,9 @@
+# Lưu ý v2.5.0
+
+Phần nhân sự và chấm công production phải triển khai theo `SETUP-HR-ATTENDANCE-PRODUCTION.md`. Các hướng dẫn demo cũ bên dưới chỉ còn giá trị tham khảo cho module F&B khác.
+
+---
+
 # Hướng dẫn setup Friendzone F&B Ops
 
 ## 1. Tạo Supabase riêng

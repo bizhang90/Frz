@@ -1,14 +1,15 @@
 {
   "name": "friendzones-group-unified",
-  "version": "2.4.6",
+  "version": "2.5.0",
   "private": true,
-  "description": "FriendZones public website using Cloudflare R2 media; fixes THÚNG menu navigation by combining à-la-carte and group menus in one browser and prevents stale JS/CSS after deploy.",
+  "description": "FriendZones F&B + Hotel production HR and GPS attendance: actual-hour tracking, no automatic checkout, identity-linked staff accounts, work schedules, leave, corrections, audit logs and strict Supabase RLS.",
   "scripts": {
     "start": "vercel dev",
-    "lint": "node -c api/[...path].js && node -c api_src/router.js && node -c api_src/notify.js && node -c api_src/fnb-ai.js && node -c api_src/kiotviet.js && node -c api_src/supabase.js"
+    "lint": "node -c api/[...path].js && node -c api_src/router.js && node -c api_src/notify.js && node -c api_src/fnb-ai.js && node -c api_src/kiotviet.js && node -c api_src/supabase.js && node -c nhan-vien/app.js && node -c nhan-vien/auth-guard.js && node -c login/login.js",
+    "qa": "npm run lint && node scripts/qa-v2.5.0.js"
   },
   "dependencies": {
-    "@supabase/supabase-js": "^2.45.4"
+    "@supabase/supabase-js": "2.45.4"
   },
   "devDependencies": {
     "vercel": "latest"
