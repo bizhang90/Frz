@@ -7,7 +7,7 @@
   <meta name="robots" content="noindex,nofollow">
   <title>Đăng nhập nhân viên | FriendZones Group</title>
   <link rel="icon" href="https://media.friendzonegroup.net/lodging/v1/friendzones-hotel/brand/logo-card.webp" type="image/webp">
-  <link rel="stylesheet" href="/login/styles.css">
+  <link rel="stylesheet" href="/login/styles.css?v=2.5.0">
 </head>
 <body>
   <main class="login-shell">
@@ -20,7 +20,7 @@
         </div>
         <p class="eyebrow">CỔNG NỘI BỘ NHÂN VIÊN</p>
         <h1>Một nơi để theo dõi vận hành toàn hệ thống.</h1>
-        <p>Chấm công, doanh thu, quỹ nội bộ, khách hàng, nhân sự, kho và vận hành khách sạn trong cùng một màn hình.</p>
+        <p>Chấm công theo giờ thực tế tại đúng cơ sở, quản lý lịch làm, nghỉ phép, nhân sự và vận hành trong cùng một màn hình.</p>
         <div class="feature-list">
           <span>✓ Theo từng cơ sở</span>
           <span>✓ Phân quyền theo nhân sự</span>
@@ -37,8 +37,8 @@
 
         <form id="login-form" novalidate>
           <label>
-            <span>Email hoặc mã nhân viên</span>
-            <input id="identity" name="identity" type="text" autocomplete="username" placeholder="name@friendzones.vn hoặc GROUP_ALL_QL" required>
+            <span>Email nhân viên</span>
+            <input id="identity" name="identity" type="text" autocomplete="username" placeholder="name@friendzones.vn" required>
           </label>
           <label>
             <span>Mật khẩu</span>
@@ -48,6 +48,14 @@
             </div>
           </label>
           <button class="submit-button" type="submit"><span>Đăng nhập nhân viên</span><b>→</b></button>
+        </form>
+        <button id="reset-password" class="demo-button" type="button">Quên mật khẩu / Đặt lại mật khẩu</button>
+
+        <form id="recovery-form" class="recovery-form" hidden>
+          <h3>Thiết lập mật khẩu mới</h3>
+          <label><span>Mật khẩu mới</span><input id="new-password" type="password" minlength="8" autocomplete="new-password" required></label>
+          <label><span>Nhập lại mật khẩu</span><input id="confirm-password" type="password" minlength="8" autocomplete="new-password" required></label>
+          <button class="submit-button" type="submit"><span>Lưu mật khẩu và vào hệ thống</span><b>→</b></button>
         </form>
 
         <button id="demo-login" class="demo-button" type="button" hidden>Vào bản demo nội bộ</button>
@@ -62,8 +70,8 @@
     </section>
   </main>
 
-  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-  <script src="/nhan-vien/config.js"></script>
-  <script src="/login/login.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4"></script>
+  <script src="/nhan-vien/config.js?v=2.5.0"></script>
+  <script src="/login/login.js?v=2.5.0"></script>
 </body>
 </html>
