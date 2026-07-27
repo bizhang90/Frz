@@ -68,5 +68,5 @@ order by unit_code,staff_name;
 -- 10) Tổng hợp tháng hiện tại.
 select *
 from public.fnb_v_attendance_monthly
-where month=date_trunc('month',(now() at time zone 'Asia/Ho_Chi_Minh')::date)::date
+where "month"=date_trunc('month',(now() at time zone 'Asia/Ho_Chi_Minh')::date)::date
 order by unit_code,staff_name;

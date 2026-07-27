@@ -927,7 +927,7 @@ alter view if exists public.fnb_v_room_status set (security_invoker=true);
 create or replace view public.fnb_v_attendance_monthly
 with (security_invoker=true)
 as
-select staff_code,staff_name,unit_code,unit_name,date_trunc('month',work_date)::date month,
+select staff_code,staff_name,unit_code,unit_name,date_trunc('month',work_date)::date as "month",
        sum(expected_minutes)::integer expected_minutes,
        sum(actual_minutes)::integer actual_minutes,
        sum(missing_minutes)::integer missing_minutes,
