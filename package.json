@@ -1,6 +1,6 @@
 {
   "name": "friendzones-group-unified",
-  "version": "2.5.0",
+  "version": "2.5.1",
   "private": true,
   "description": "FriendZones F&B + Hotel production HR and GPS attendance: actual-hour tracking, no automatic checkout, identity-linked staff accounts, work schedules, leave, corrections, audit logs and strict Supabase RLS.",
   "scripts": {
