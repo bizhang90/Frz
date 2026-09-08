@@ -2,7 +2,7 @@
   'use strict';
 
   const CONFIG = window.FNB_CONFIG || {};
-  const STORE_KEY = 'FRIENDZONE_FNB_OPS_V1';
+  const STORE_KEY = 'FRIENDZONE_FNB_OPS_V1_0_1';
   const root = document.getElementById('app');
   const toastEl = document.getElementById('toast');
   let sb = null;
@@ -12,9 +12,10 @@
 
   const UNIT_SEED = [
     {code:'GROUP_ALL', name:'Friendzone Group', type:'GROUP', parent_code:null, address:'Phan Thiết / Lâm Đồng', manager_code:'GROUP_ALL_QL'},
-    {code:'NHA_ALL', name:'Tất cả nhà hàng', type:'RESTAURANT_GROUP', parent_code:'GROUP_ALL', address:'Tổng hợp nhà hàng', manager_code:'NHA_ALL_QL'},
-    {code:'NHA_SAIGONPHO', name:'Sài Gòn Phố - Beer Garden & Karaoke', type:'RESTAURANT', parent_code:'NHA_ALL', address:'N5-33 Mậu Thân, Phú Thuỷ, Lâm Đồng - Ocean Dunes Phan Thiết', manager_code:'NHA_SAIGONPHO_QL'},
-    {code:'NHA_FRZ', name:'Friendzone Restaurant', type:'RESTAURANT', parent_code:'NHA_ALL', address:'Friendzone Restaurant', manager_code:'NHA_FRZ_QL'},
+    {code:'NHA_GROUP', name:'Tất cả nhà hàng', type:'RESTAURANT_GROUP', parent_code:'GROUP_ALL', address:'Tổng hợp nhà hàng', manager_code:'NHA_GROUP_QL'},
+    {code:'NHA_ALL', name:'All Night Food & Beer', type:'RESTAURANT', parent_code:'NHA_GROUP', address:'All Night Food & Beer', manager_code:'NHA_ALL_QL'},
+    {code:'NHA_SAIGONPHO', name:'Sài Gòn Phố - Beer Garden & Karaoke', type:'RESTAURANT', parent_code:'NHA_GROUP', address:'N5-33 Mậu Thân, Phú Thuỷ, Lâm Đồng - Ocean Dunes Phan Thiết', manager_code:'NHA_SAIGONPHO_QL'},
+    {code:'NHA_FRZ', name:'Friendzone Restaurant', type:'RESTAURANT', parent_code:'NHA_GROUP', address:'Friendzone Restaurant', manager_code:'NHA_FRZ_QL'},
     {code:'HOTEL_ALL', name:'Tất cả Hotel', type:'HOTEL_GROUP', parent_code:'GROUP_ALL', address:'Tổng hợp lưu trú', manager_code:'HOTEL_ALL_QL'},
     {code:'HOTEL_VENUS', name:'Venus Resort / Hotel', type:'HOTEL', parent_code:'HOTEL_ALL', address:'Mũi Né / Phan Thiết', manager_code:'HOTEL_VENUS_QL'},
     {code:'HOTEL_VOLGA', name:'Volga Hotel Apartment', type:'HOTEL', parent_code:'HOTEL_ALL', address:'Phan Thiết', manager_code:'HOTEL_VOLGA_QL'},
@@ -59,7 +60,10 @@
     const d = today();
     const staff = [
       {code:'GROUP_ALL_QL', name:'Admin Friendzone', unit_code:'GROUP_ALL', role:'ADMIN', position:'Chủ / Ban giám đốc', department:'Điều hành', salary_type:'monthly', base_salary:0, active:true, permissions:PERMISSIONS},
-      {code:'NHA_ALL_QL', name:'Quản lý tổng nhà hàng', unit_code:'NHA_ALL', role:'MANAGER', position:'Quản lý vùng nhà hàng', department:'Vận hành', salary_type:'monthly', base_salary:15000000, active:true, permissions:['dashboard','attendance','finance','customers','hr','kiot']},
+      {code:'NHA_GROUP_QL', name:'Quản lý tổng nhà hàng', unit_code:'NHA_GROUP', role:'MANAGER', position:'Quản lý vùng nhà hàng', department:'Vận hành', salary_type:'monthly', base_salary:15000000, active:true, permissions:['dashboard','attendance','finance','customers','hr','kiot']},
+      {code:'NHA_ALL_QL', name:'QL All Night Food & Beer', unit_code:'NHA_ALL', role:'MANAGER', position:'Quản lý cơ sở', department:'Vận hành', salary_type:'monthly', base_salary:12000000, active:true, permissions:['dashboard','attendance','finance','customers','hr','kiot']},
+      {code:'NHA_ALL_01', name:'Thu ngân All Night', unit_code:'NHA_ALL', role:'STAFF', position:'Thu ngân', department:'Thu ngân', salary_type:'monthly', base_salary:7500000, active:true, permissions:['attendance','finance','customers']},
+      {code:'NHA_ALL_02', name:'Phục vụ All Night', unit_code:'NHA_ALL', role:'STAFF', position:'Phục vụ', department:'Phục vụ', salary_type:'shift', base_salary:250000, active:true, permissions:['attendance','customers']},
       {code:'NHA_SAIGONPHO_QL', name:'QL Sài Gòn Phố', unit_code:'NHA_SAIGONPHO', role:'MANAGER', position:'Quản lý cơ sở', department:'Vận hành', salary_type:'monthly', base_salary:12000000, active:true, permissions:['dashboard','attendance','finance','customers','hr','kiot']},
       {code:'NHA_SAIGONPHO_01', name:'Thu ngân SGP', unit_code:'NHA_SAIGONPHO', role:'STAFF', position:'Thu ngân', department:'Thu ngân', salary_type:'monthly', base_salary:7500000, active:true, permissions:['attendance','finance','customers']},
       {code:'NHA_SAIGONPHO_02', name:'Phục vụ SGP', unit_code:'NHA_SAIGONPHO', role:'STAFF', position:'Phục vụ', department:'Phục vụ', salary_type:'shift', base_salary:250000, active:true, permissions:['attendance','customers']},
@@ -74,12 +78,15 @@
       {code:'HOTEL_FRZ_QL', name:'QL Friendzone Hotel', unit_code:'HOTEL_FRZ', role:'MANAGER', position:'Quản lý khách sạn', department:'Lưu trú', salary_type:'monthly', base_salary:11000000, active:true, permissions:['dashboard','attendance','finance','customers','hr','hotel']}
     ];
     const invoices = [
+      {id:'INV-000', unit_code:'NHA_ALL', date:d, source:'KiotViet', code:'KV-ALLNIGHT-0901', total:2860000, cash:860000, bank:2000000, status:'paid', customer:'Khách All Night Food & Beer'},
       {id:'INV-001', unit_code:'NHA_SAIGONPHO', date:d, source:'KiotViet', code:'KV-SGP-1001', total:3280000, cash:1280000, bank:2000000, status:'paid', customer:'Khách tiệc sinh nhật'},
       {id:'INV-002', unit_code:'NHA_SAIGONPHO', date:d, source:'KiotViet', code:'KV-SGP-1002', total:1560000, cash:1560000, bank:0, status:'paid', customer:'Khách walk-in'},
       {id:'INV-003', unit_code:'NHA_FRZ', date:d, source:'KiotViet', code:'KV-FRZ-2011', total:2420000, cash:420000, bank:2000000, status:'paid', customer:'Khách đặt bàn'},
       {id:'INV-004', unit_code:'HOTEL_VENUS', date:d, source:'KiotViet Hotel', code:'KV-VENUS-3301', total:1850000, cash:0, bank:1850000, status:'paid', customer:'Khách lưu trú'}
     ];
     const invoiceItems = [
+      {invoice_id:'INV-000', unit_code:'NHA_ALL', product_code:'COMBO_NHAU', product_name:'Combo nhậu 4 người', qty:2, price:980000, cost_estimate:1040000},
+      {invoice_id:'INV-000', unit_code:'NHA_ALL', product_code:'BIA_TIGER', product_name:'Bia Tiger', qty:30, price:30000, cost_estimate:540000},
       {invoice_id:'INV-001', unit_code:'NHA_SAIGONPHO', product_code:'LAU_HAI_SAN', product_name:'Lẩu hải sản', qty:2, price:680000, cost_estimate:720000},
       {invoice_id:'INV-001', unit_code:'NHA_SAIGONPHO', product_code:'BIA_TIGER', product_name:'Bia Tiger', qty:24, price:30000, cost_estimate:432000},
       {invoice_id:'INV-001', unit_code:'NHA_SAIGONPHO', product_code:'KARAOKE_VIP', product_name:'Phòng VIP Karaoke', qty:2, price:600000, cost_estimate:120000},
@@ -106,6 +113,9 @@
       {product_code:'COMBO_NHAU', product_name:'Combo nhậu 4 người', ingredient_code:'RAU_LAU', qty:1}
     ];
     const stockMovements = [
+      {id:'STK-0A', unit_code:'NHA_ALL', date:d, ingredient_code:'THIT_BBQ', type:'in', qty:10, note:'Tồn đầu All Night'},
+      {id:'STK-0B', unit_code:'NHA_ALL', date:d, ingredient_code:'RAU_LAU', type:'in', qty:15, note:'Tồn đầu All Night'},
+      {id:'STK-0C', unit_code:'NHA_ALL', date:d, ingredient_code:'BIA_TIGER', type:'in', qty:120, note:'Tồn bia All Night'},
       {id:'STK-1', unit_code:'NHA_SAIGONPHO', date:d, ingredient_code:'TOM', type:'in', qty:8, note:'Tồn đầu/ngày'},
       {id:'STK-2', unit_code:'NHA_SAIGONPHO', date:d, ingredient_code:'MUC', type:'in', qty:7, note:'Tồn đầu/ngày'},
       {id:'STK-3', unit_code:'NHA_SAIGONPHO', date:d, ingredient_code:'RAU_LAU', type:'in', qty:18, note:'Tồn đầu/ngày'},
@@ -120,11 +130,13 @@
       staff,
       activeStaffCode:'GROUP_ALL_QL',
       attendanceRecords:[
+        {id:'ATT-0', staff_code:'NHA_ALL_01', unit_code:'NHA_ALL', work_date:d, shift:'evening', check_in_at:d+'T16:00:00', check_out_at:'', status:'working', checklist_done:false},
         {id:'ATT-1', staff_code:'NHA_SAIGONPHO_01', unit_code:'NHA_SAIGONPHO', work_date:d, shift:'full', check_in_at:d+'T09:58:00', check_out_at:'', status:'working', checklist_done:false},
         {id:'ATT-2', staff_code:'NHA_SAIGONPHO_02', unit_code:'NHA_SAIGONPHO', work_date:d, shift:'evening', check_in_at:d+'T15:45:00', check_out_at:'', status:'working', checklist_done:false},
         {id:'ATT-3', staff_code:'HOTEL_VENUS_01', unit_code:'HOTEL_VENUS', work_date:d, shift:'morning', check_in_at:d+'T06:58:00', check_out_at:'', status:'working', checklist_done:false}
       ],
       financeTransactions:[
+        {id:'TXN-0', unit_code:'NHA_ALL', date:d, type:'expense', account:'TM_NHA_ALL', category:'Mua hàng bếp', amount:650000, note:'Mua nguyên liệu All Night', evidence:''},
         {id:'TXN-1', unit_code:'NHA_SAIGONPHO', date:d, type:'expense', account:'TM_NHA_SAIGONPHO', category:'Mua hàng bếp', amount:980000, note:'Mua hải sản đầu ngày', evidence:''},
         {id:'TXN-2', unit_code:'HOTEL_VENUS', date:d, type:'expense', account:'TM_HOTEL_VENUS', category:'Sửa chữa', amount:250000, note:'Sửa nước phòng 102', evidence:''}
       ],
@@ -204,12 +216,12 @@
   function isHotelUnit(code){ const u=unitBy(code); return u.type && u.type.includes('HOTEL'); }
   function unitCodes(filter=ui.unit){
     if(filter==='GROUP_ALL') return state.units.map(u=>u.code);
-    if(filter==='NHA_ALL') return state.units.filter(u=>u.code==='NHA_ALL' || u.parent_code==='NHA_ALL' || u.code.startsWith('NHA_')).map(u=>u.code);
+    if(filter==='NHA_GROUP') return state.units.filter(u=>u.code==='NHA_GROUP' || u.parent_code==='NHA_GROUP' || u.type==='RESTAURANT').map(u=>u.code);
     if(filter==='HOTEL_ALL') return state.units.filter(u=>u.code==='HOTEL_ALL' || u.parent_code==='HOTEL_ALL' || u.code.startsWith('HOTEL_')).map(u=>u.code);
     return [filter];
   }
   function inUnit(row, filter=ui.unit){ return unitCodes(filter).includes(row.unit_code); }
-  function realUnits(){ return state.units.filter(u => !['GROUP_ALL','NHA_ALL','HOTEL_ALL'].includes(u.code)); }
+  function realUnits(){ return state.units.filter(u => !['GROUP_ALL','NHA_GROUP','HOTEL_ALL'].includes(u.code)); }
   function restaurantUnits(){ return realUnits().filter(u => u.type === 'RESTAURANT'); }
   function hotelUnits(){ return realUnits().filter(u => u.type === 'HOTEL'); }
 
@@ -278,7 +290,7 @@
         <aside class="sidebar ${ui.mobile?'open':''}">
           <div class="brand"><img src="logo.png" alt="Friendzone"><div><h1>Friendzone<br>F&B Ops</h1><p>Nhà hàng + Hotel OS</p></div></div>
           <nav class="nav">${PAGES.map(p=>`<button class="${ui.page===p[0]?'active':''}" data-action="nav" data-page="${p[0]}"><span>${p[1]}</span><span>${p[2]}</span></button>`).join('')}</nav>
-          <div class="sidefoot">Bản v1.0 · Tách riêng khỏi app đào tạo lái xe.<br>Logo Friendzone đã gắn sẵn.<br><span class="code">${sb?'Supabase':'Demo/local'}</span></div>
+          <div class="sidefoot">Bản v1.0.1 · Đã sửa NHA_ALL = All Night Food & Beer.<br>Logo Friendzone đã gắn sẵn.<br><span class="code">${sb?'Supabase':'Demo/local'}</span></div>
         </aside>
         <main class="main">
           <div class="topbar">

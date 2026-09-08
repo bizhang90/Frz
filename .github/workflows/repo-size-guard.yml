@@ -1,0 +1,36 @@
+name: Repository size guard
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  guard:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Block media that belongs in R2
+        shell: bash
+        run: |
+          set -euo pipefail
+          forbidden=$(git ls-files | grep -E '\.(mp4|mov|webm|mkv|avi|wav|mp3|zip|tar\.gz)$' || true)
+          if [ -n "$forbidden" ]; then
+            echo "Media/archive files must be stored in Cloudflare R2, not Git:"
+            echo "$forbidden"
+            exit 1
+          fi
+      - name: Block files larger than 5 MiB
+        shell: bash
+        run: |
+          set -euo pipefail
+          failed=0
+          while IFS= read -r -d '' file; do
+            size=$(stat -c%s "$file")
+            if [ "$size" -gt 5242880 ]; then
+              echo "Too large: $file ($size bytes)"
+              failed=1
+            fi
+          done < <(git ls-files -z)
+          exit "$failed"

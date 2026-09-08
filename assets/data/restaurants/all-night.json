@@ -1,0 +1,294 @@
+{
+  "slug": "all-night",
+  "name": "All Night Food & Beer",
+  "hero": {
+    "desktop": "https://media.friendzonegroup.net/restaurants/v1/all-night/hero/desktop.webp",
+    "mobile": "https://media.friendzonegroup.net/restaurants/v1/all-night/hero/mobile.webp"
+  },
+  "gallery": [
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/all-night/gallery/image-01.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/all-night/thumbs/image-01.webp",
+      "alt": "Không gian sân vườn và khu vực sân khấu All Night",
+      "category": "space"
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/all-night/gallery/image-02.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/all-night/thumbs/image-02.webp",
+      "alt": "Không khí buổi tối tại All Night Food & Beer",
+      "category": "space"
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/all-night/gallery/image-03.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/all-night/thumbs/image-03.webp",
+      "alt": "Cổng vào All Night Food & Beer",
+      "category": "space"
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/all-night/gallery/image-04.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/all-night/thumbs/image-04.webp",
+      "alt": "Toàn cảnh All Night Food & Beer về đêm",
+      "category": "space"
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/all-night/gallery/image-05.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/all-night/thumbs/image-05.webp",
+      "alt": "Khu vực bàn ngoài trời tại All Night",
+      "category": "space"
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/all-night/gallery/image-06.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/all-night/thumbs/image-06.webp",
+      "alt": "Khách dùng bữa trong không gian ngoài trời",
+      "category": "dining"
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/all-night/gallery/image-07.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/all-night/thumbs/image-07.webp",
+      "alt": "Bữa tối cùng bạn bè tại All Night",
+      "category": "dining"
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/all-night/gallery/image-08.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/all-night/thumbs/image-08.webp",
+      "alt": "Không khí gặp gỡ và dùng bữa",
+      "category": "dining"
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/all-night/gallery/image-09.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/all-night/thumbs/image-09.webp",
+      "alt": "Bàn tiệc nhóm tại All Night",
+      "category": "dining"
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/all-night/gallery/image-10.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/all-night/thumbs/image-10.webp",
+      "alt": "Trang trí sinh nhật tại All Night",
+      "category": "party"
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/all-night/gallery/image-11.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/all-night/thumbs/image-11.webp",
+      "alt": "Tiệc sinh nhật ngoài trời",
+      "category": "party"
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/all-night/gallery/image-12.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/all-night/thumbs/image-12.webp",
+      "alt": "Khoảnh khắc sinh nhật cùng bạn bè",
+      "category": "party"
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/all-night/gallery/image-13.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/all-night/thumbs/image-13.webp",
+      "alt": "Không gian trang trí sinh nhật",
+      "category": "party"
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/all-night/gallery/image-14.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/all-night/thumbs/image-14.webp",
+      "alt": "Tiệc nhóm trong không gian riêng",
+      "category": "party"
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/all-night/gallery/image-15.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/all-night/thumbs/image-15.webp",
+      "alt": "Bàn tiệc được trang trí theo yêu cầu",
+      "category": "party"
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/all-night/gallery/image-16.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/all-night/thumbs/image-16.webp",
+      "alt": "Hoa và trang trí dành cho dịp đặc biệt",
+      "category": "party"
+    }
+  ],
+  "menu": [
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/all-night/menu/page-01.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/all-night/menu/thumbs/page-01.webp",
+      "alt": "Thực đơn All Night Food & Beer - trang 1",
+      "page": 1
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/all-night/menu/page-02.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/all-night/menu/thumbs/page-02.webp",
+      "alt": "Thực đơn All Night Food & Beer - trang 2",
+      "page": 2
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/all-night/menu/page-03.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/all-night/menu/thumbs/page-03.webp",
+      "alt": "Thực đơn All Night Food & Beer - trang 3",
+      "page": 3
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/all-night/menu/page-04.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/all-night/menu/thumbs/page-04.webp",
+      "alt": "Thực đơn All Night Food & Beer - trang 4",
+      "page": 4
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/all-night/menu/page-05.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/all-night/menu/thumbs/page-05.webp",
+      "alt": "Thực đơn All Night Food & Beer - trang 5",
+      "page": 5
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/all-night/menu/page-06.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/all-night/menu/thumbs/page-06.webp",
+      "alt": "Thực đơn All Night Food & Beer - trang 6",
+      "page": 6
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/all-night/menu/page-07.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/all-night/menu/thumbs/page-07.webp",
+      "alt": "Thực đơn All Night Food & Beer - trang 7",
+      "page": 7
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/all-night/menu/page-08.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/all-night/menu/thumbs/page-08.webp",
+      "alt": "Thực đơn All Night Food & Beer - trang 8",
+      "page": 8
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/all-night/menu/page-09.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/all-night/menu/thumbs/page-09.webp",
+      "alt": "Thực đơn All Night Food & Beer - trang 9",
+      "page": 9
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/all-night/menu/page-10.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/all-night/menu/thumbs/page-10.webp",
+      "alt": "Thực đơn All Night Food & Beer - trang 10",
+      "page": 10
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/all-night/menu/page-11.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/all-night/menu/thumbs/page-11.webp",
+      "alt": "Thực đơn All Night Food & Beer - trang 11",
+      "page": 11
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/all-night/menu/page-12.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/all-night/menu/thumbs/page-12.webp",
+      "alt": "Thực đơn All Night Food & Beer - trang 12",
+      "page": 12
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/all-night/menu/page-13.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/all-night/menu/thumbs/page-13.webp",
+      "alt": "Thực đơn All Night Food & Beer - trang 13",
+      "page": 13
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/all-night/menu/page-14.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/all-night/menu/thumbs/page-14.webp",
+      "alt": "Thực đơn All Night Food & Beer - trang 14",
+      "page": 14
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/all-night/menu/page-15.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/all-night/menu/thumbs/page-15.webp",
+      "alt": "Thực đơn All Night Food & Beer - trang 15",
+      "page": 15
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/all-night/menu/page-16.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/all-night/menu/thumbs/page-16.webp",
+      "alt": "Thực đơn All Night Food & Beer - trang 16",
+      "page": 16
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/all-night/menu/page-17.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/all-night/menu/thumbs/page-17.webp",
+      "alt": "Thực đơn All Night Food & Beer - trang 17",
+      "page": 17
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/all-night/menu/page-18.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/all-night/menu/thumbs/page-18.webp",
+      "alt": "Thực đơn All Night Food & Beer - trang 18",
+      "page": 18
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/all-night/menu/page-19.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/all-night/menu/thumbs/page-19.webp",
+      "alt": "Thực đơn All Night Food & Beer - trang 19",
+      "page": 19
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/all-night/menu/page-20.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/all-night/menu/thumbs/page-20.webp",
+      "alt": "Thực đơn All Night Food & Beer - trang 20",
+      "page": 20
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/all-night/menu/page-21.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/all-night/menu/thumbs/page-21.webp",
+      "alt": "Thực đơn All Night Food & Beer - trang 21",
+      "page": 21
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/all-night/menu/page-22.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/all-night/menu/thumbs/page-22.webp",
+      "alt": "Thực đơn All Night Food & Beer - trang 22",
+      "page": 22
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/all-night/menu/page-23.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/all-night/menu/thumbs/page-23.webp",
+      "alt": "Thực đơn All Night Food & Beer - trang 23",
+      "page": 23
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/all-night/menu/page-24.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/all-night/menu/thumbs/page-24.webp",
+      "alt": "Thực đơn All Night Food & Beer - trang 24",
+      "page": 24
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/all-night/menu/page-25.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/all-night/menu/thumbs/page-25.webp",
+      "alt": "Thực đơn All Night Food & Beer - trang 25",
+      "page": 25
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/all-night/menu/page-26.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/all-night/menu/thumbs/page-26.webp",
+      "alt": "Thực đơn All Night Food & Beer - trang 26",
+      "page": 26
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/all-night/menu/page-27.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/all-night/menu/thumbs/page-27.webp",
+      "alt": "Thực đơn All Night Food & Beer - trang 27",
+      "page": 27
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/all-night/menu/page-28.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/all-night/menu/thumbs/page-28.webp",
+      "alt": "Thực đơn All Night Food & Beer - trang 28",
+      "page": 28
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/all-night/menu/page-29.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/all-night/menu/thumbs/page-29.webp",
+      "alt": "Thực đơn All Night Food & Beer - trang 29",
+      "page": 29
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/all-night/menu/page-30.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/all-night/menu/thumbs/page-30.webp",
+      "alt": "Thực đơn All Night Food & Beer - trang 30",
+      "page": 30
+    },
+    {
+      "src": "https://media.friendzonegroup.net/restaurants/v1/all-night/menu/page-31.webp",
+      "thumb": "https://media.friendzonegroup.net/restaurants/v1/all-night/menu/thumbs/page-31.webp",
+      "alt": "Thực đơn All Night Food & Beer - trang 31",
+      "page": 31
+    }
+  ]
+}

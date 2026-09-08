@@ -1,0 +1,29 @@
+# R2 is the source of truth for production media.
+# Do not commit migrated lodging/home media back into Git.
+
+du-an/venus-mui-ne-resort/assets-v2/img/
+du-an/venus-mui-ne-resort/assets-v2/video/
+du-an/venus-mui-ne-resort/assets/img/
+du-an/volga-hotel-apartment/assets/img/
+du-an/khach-san-phan-thiet/assets/img/
+assets/img/home/
+assets/img/home-v2/
+
+# Large/generated media belongs in Cloudflare R2, not Git.
+*.mp4
+*.mov
+*.webm
+*.mkv
+*.avi
+*.wav
+*.mp3
+*.zip
+*.tar.gz
+
+# Local secrets / generated junk
+.env
+.env.*
+!.env.example
+node_modules/
+.DS_Store
+Thumbs.db

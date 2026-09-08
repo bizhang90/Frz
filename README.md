@@ -1,129 +1,87 @@
-# Friendzone F&B Ops v1.0
+# FriendZones Unified v2.5.0
 
-App vận hành riêng cho Friendzone Group: nhà hàng + hotel. Bản này được tách khỏi app Đào Tạo Lái Xe và dùng prefix database `fnb_`.
+Bản production cho website công khai và cổng nhân viên F&B/Hotel. Nâng cấp chính: quản lý nhân sự, phân quyền Supabase và chấm công GPS theo giờ làm thực tế, không tự động checkout.
 
-## Phân hệ đã có trong bản v1
+## Triển khai HR & chấm công
 
-1. **Tổng quan điều hành**
-   - Doanh thu hôm nay theo cơ sở.
-   - Nhân sự đang làm.
-   - Tin nhắn Page mới.
-   - Cảnh báo tồn kho.
-   - Công suất hotel.
+Đọc và thực hiện đúng thứ tự trong [`SETUP-HR-ATTENDANCE-PRODUCTION.md`](SETUP-HR-ATTENDANCE-PRODUCTION.md).
 
-2. **Chấm công**
-   - Chọn nhân sự.
-   - Check-in / Check-out.
-   - Checklist cuối ca cho Nhà hàng và Hotel.
-   - Ghi OFF demo cho nhân sự không chấm công.
+Migration và kiểm tra mới:
 
-3. **Kế toán nội bộ**
-   - Phiếu thu/chi/chuyển quỹ.
-   - Kết ca.
-   - Đối soát tiền mặt/CK so với KiotViet.
-   - Quỹ theo từng cơ sở.
+```text
+supabase/005_hr_attendance_production.sql
+supabase/006_bootstrap_first_admin_template.sql
+supabase/007_post_deploy_verification.sql
+```
 
-4. **Khách hàng & AI**
-   - Nhận/tạo tin nhắn Page.
-   - AI rule-based phân loại nhu cầu: đặt bàn, karaoke, tiệc, hotel, khiếu nại.
-   - Tạo Lead/Booking.
-   - Tạo thông báo nhóm và tự che số điện thoại.
+Tài liệu vận hành:
 
-5. **Quản lý nhân sự**
-   - Tạo mã quản lý `_QL`.
-   - Tạo mã nhân sự `_01`, `_02`...
-   - Chức danh, bộ phận, lương, quyền.
+```text
+HUONG-DAN-VAN-HANH-NHAN-SU-CHAM-CONG.md
+GO-LIVE-CHECKLIST-v2.5.0.md
+```
 
-6. **KiotViet & Kho**
-   - Dashboard doanh thu / món bán.
-   - Định lượng món.
-   - Tồn kho ước lượng = nhập/tồn đầu - bán ra theo định lượng.
-   - Endpoint `/api/kiotviet-sync` để nối API KiotViet.
+---
 
-7. **Hotel**
-   - Sơ đồ phòng.
-   - Trạng thái sạch/bẩn/có khách/bảo trì.
-   - Booking nhanh.
-   - Housekeeping task.
+# FriendZones — Website + Employee Portal v2.2.1
 
-## Cơ sở đã setup
+Dự án hợp nhất website FriendZones, các trang địa điểm lưu trú và App vận hành F&B/Hotel trong cùng một project Vercel.
 
-- `GROUP_ALL`
-- `NHA_ALL`
-- `NHA_SAIGONPHO`
-- `NHA_FRZ`
-- `HOTEL_ALL`
-- `HOTEL_VENUS`
-- `HOTEL_VOLGA`
-- `HOTEL_A64`
-- `HOTEL_FRZ`
+## Luồng sử dụng
 
-## Chạy thử local
+- Khách hàng truy cập `/` để xem các địa điểm lưu trú, ẩm thực và vui chơi.
+- Nhân viên chọn **Nhân viên** để vào `/login/` rồi mở `/nhan-vien/` sau khi đăng nhập.
+- Venus Mũi Né Resort: `/du-an/venus-mui-ne-resort/`.
+- Volga Hotel & Apartment: `/du-an/volga-hotel-apartment/`.
+- API vận hành tiếp tục hoạt động dưới `/api/*`.
 
-Mở trực tiếp `index.html` bằng Live Server hoặc deploy lên Vercel. Nếu chưa cấu hình Supabase, app chạy bằng demo data trong `localStorage`.
+## Cấu trúc chính
+
+```text
+/
+├── index.html                         Website chính
+├── assets/                            Ảnh, CSS, JS website
+├── du-an/venus-mui-ne-resort/         Trang Venus Resort
+├── du-an/volga-hotel-apartment/       Trang Volga Hotel & Apartment
+├── login/                             Màn hình đăng nhập nhân viên
+├── nhan-vien/                         App F&B + Hotel hiện tại
+├── api/                               Vercel Functions
+├── api_src/                           Backend source
+├── supabase/                          SQL schema/seed
+├── sitemap.xml
+├── package.json
+└── vercel.json
+```
 
 ## Deploy Vercel
 
-1. Upload toàn bộ thư mục này lên GitHub.
-2. Import repo vào Vercel.
-3. Tạo Supabase project riêng cho F&B.
-4. Chạy SQL:
-   - `supabase/001_fnb_core_schema.sql`
-   - `supabase/002_seed_friendzone_units.sql`
-   - `supabase/003_views_reports.sql`
-5. Copy `config.example.js` thành `config.js`, điền:
+1. Đưa toàn bộ nội dung trong thư mục này vào root repository.
+2. Vercel Framework Preset: **Other**.
+3. Root Directory: `./`.
+4. Build Command và Output Directory: để trống.
+5. Thêm Environment Variables backend theo `SETUP-FNB.md`.
+6. Cấu hình đăng nhập theo `AUTH-SETUP.md`.
+7. Redeploy Production và kiểm tra các đường dẫn `/`, `/du-an/venus-mui-ne-resort/`, `/du-an/volga-hotel-apartment/`, `/login/` và `/nhan-vien/`.
 
-```js
-window.FNB_CONFIG = {
-  APP_NAME: 'Friendzone F&B Ops',
-  APP_ENV: 'production',
-  SUPABASE_URL: 'https://xxx.supabase.co',
-  SUPABASE_ANON_KEY: 'xxx',
-  DEFAULT_UNIT: 'GROUP_ALL',
-  GROUP_NAME: 'Friendzone Group',
-  PRIVACY_HIDE_PHONE_IN_GROUP: true,
-  API_BASE: '/api'
-};
-```
+## Website công khai v2.2
 
-6. Trên Vercel đặt Environment Variables:
+- Trang chủ giới thiệu chung toàn bộ FriendZones.
+- Menu con **Các dự án** chứa Venus Mũi Né Resort và Volga Hotel & Apartment.
+- Hotline/Zalo chung: `0877 706 677`.
+- Venus sử dụng hotline riêng `0819 08 1111`.
+- Volga sử dụng hotline riêng `088 846 47 77`.
+- Ảnh hero độ phân giải cao, logo thương hiệu, gradient và hiệu ứng chuyển động đã được bổ sung.
+- Không phụ thuộc Google Fonts; sử dụng font hệ thống hỗ trợ tiếng Việt.
+- Trang Venus v2.2 sử dụng ảnh/video thực tế, hero cinematic, gallery lọc theo chủ đề, video tour, form kiểm tra phòng và CTA mobile.
 
-```text
-SUPABASE_URL=
-SUPABASE_SERVICE_ROLE_KEY=
-KIOTVIET_RETAILER=
-KIOTVIET_CLIENT_ID=
-KIOTVIET_CLIENT_SECRET=
-KIOTVIET_WEBHOOK_SECRET=
-META_VERIFY_TOKEN=
-ZALO_GATEWAY_URL=
-ZALO_GATEWAY_SECRET=
-TELEGRAM_BOT_TOKEN=
-TELEGRAM_CHAT_ID_FNB=
-```
+## API giữ nguyên
 
-## API có sẵn
+- `/api/health`
+- `/api/page-message`
+- `/api/meta-webhook`
+- `/api/kiotviet-sync`
+- `/api/notify-test`
 
-- `GET /api/health`
-- `POST /api/ai-consult`
-- `POST /api/page-message`
-- `POST /api/notify-test`
-- `POST /api/kiotviet-sync`
-- `GET/POST /api/meta-webhook`
-- `POST /api/kiot-webhook`
+## Phiên bản
 
-## Ghi chú bảo mật
-
-- Bản v1 đang có RLS policy mở để test nội bộ nhanh.
-- Khi go-live thật cần siết lại theo user/role/cơ sở.
-- Thông báo nhóm đã có hàm che số điện thoại trước khi gửi.
-- Không lưu Service Role Key trong `config.js`, chỉ đặt trong Vercel Environment Variables.
-
-## Vòng tiếp theo nên làm
-
-- Đăng nhập user thật bằng Supabase Auth.
-- Phân quyền theo cơ sở và chức danh.
-- Sync đầy đủ invoice/items/stock từ KiotViet.
-- Webhook Facebook Page chính thức.
-- AI tư vấn nối OpenAI/Gemini với thư viện câu trả lời riêng cho từng cơ sở.
-- Payroll: lương, tăng ca, tạm ứng, thưởng/phạt.
+`v2.2.1-project-menu-restored`
