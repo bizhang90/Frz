@@ -1,14 +1,14 @@
 {
   "$schema": "https://json.schemastore.org/wrangler.json",
   "name": "friendzone-migration-staging",
-  "main": "./cloudflare/worker.mjs",
+  "main": "./worker.mjs",
   "compatibility_date": "2026-10-09",
   "compatibility_flags": ["nodejs_compat"],
   "workers_dev": false,
   "preview_urls": false,
   "routes": [],
   "assets": {
-    "directory": "./dist/cloudflare-public",
+    "directory": "../dist/cloudflare-public",
     "binding": "ASSETS",
     "run_worker_first": ["/api/*", "/nhan-vien/config.js", "/config.js", "/app", "/admin"],
     "not_found_handling": "404-page",
