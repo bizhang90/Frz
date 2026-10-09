@@ -59,6 +59,33 @@ jobs:
       - name: Cloudflare Worker bundle dry-run (no credentials)
         run: npx --yes wrangler@4.92.0 deploy --dry-run --config cloudflare/wrangler.jsonc --outdir .wrangler-build
 
+      - name: Smoke test local Worker responses
+        shell: bash
+        run: |
+          set -euo pipefail
+          npx --yes wrangler@4.92.0 dev --local --ip 127.0.0.1 --port 8787 --config cloudflare/wrangler.jsonc > /tmp/frz-worker.log 2>&1 &
+          worker_pid=$!
+          trap 'kill "$worker_pid" 2>/dev/null || true' EXIT
+          ready=0
+          for i in $(seq 1 45); do
+            status=$(curl --max-time 2 -s -o /dev/null -w "%{http_code}" http://127.0.0.1:8787/ || true)
+            if [ "$status" = "200" ]; then ready=1; break; fi
+            sleep 2
+          done
+          if [ "$ready" != "1" ]; then cat /tmp/frz-worker.log; exit 1; fi
+          for endpoint in / /login/ /nhan-vien/ /du-an/venus-mui-ne-resort/; do
+            status=$(curl --max-time 10 -s -o /dev/null -w "%{http_code}" "http://127.0.0.1:8787$endpoint")
+            echo "$endpoint -> $status"
+            test "$status" = "200"
+          done
+          for endpoint in /api/health /nhan-vien/config.js; do
+            status=$(curl --max-time 10 -s -o /dev/null -w "%{http_code}" "http://127.0.0.1:8787$endpoint")
+            echo "$endpoint without secrets -> $status"
+            test "$status" = "503"
+          done
+          status=$(curl -s -o /dev/null -w "%{http_code}" http://127.0.0.1:8787/api_src/supabase.js)
+          test "$status" = "404"
+
       - name: Require Cloudflare secrets for optional unrouted upload
         if: ${{ github.event_name == 'workflow_dispatch' && inputs.upload_unrouted }}
         env:
