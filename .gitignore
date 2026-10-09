@@ -27,3 +27,8 @@ assets/img/home-v2/
 node_modules/
 .DS_Store
 Thumbs.db
+
+# Generated Cloudflare artifacts
+/dist/
+/.wrangler/
+/.wrangler-build/
